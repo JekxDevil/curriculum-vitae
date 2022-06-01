@@ -1,0 +1,435 @@
+\documentclass[letterpaper, 11pt]{article}
+\usepackage{geometry}
+\usepackage[dvipsnames, table]{xcolor}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{amssymb}
+\usepackage{xpatch}
+
+\geometry{margin=3cm}
+\def\labelitemi{$\diamond$}
+\definecolor{linked}{RGB}{27, 27, 141}
+\definecolor{tablelines}{RGB}{192, 192, 192}
+\definecolor{rowcertificatecolor}{RGB}{236, 236, 236}
+\definecolor{titlecolor}{RGB}{0, 53, 141}
+\definecolor{linecolor}{RGB}{46, 144, 203}
+
+\title{Curriculum Vitae}
+\author{Jeferson Morales Mariciano}
+\date{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% header %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{empty}
+\fancyhf{}
+\lhead{
+    \includegraphics[width=0.7em]{logo/email}
+    \scriptsize \hspace{0.1em}
+    jeferson.morales.mariciano@gmail.com}
+
+\chead{
+    \includegraphics[width=0.7em]{logo/phone} 
+    \scriptsize \hspace{0.1em}
+    +39 3278557818}
+
+\rhead{
+    \includegraphics[width=0.7em]{logo/address}
+    \scriptsize \hspace{0.1em}
+    Lugano, Switzerland}
+    
+\renewcommand{\headrulewidth}{1pt}
+\xpretocmd\headrule{\color{linecolor}}{}{\PatchFailed}
+
+
+\fancypagestyle{endfooter}{
+    \fancyhf{}
+    \fancyfoot{
+    
+    }
+}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Anagraphics %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\thispagestyle{fancy}
+\begin{minipage}[t]{\linewidth}
+    \begin{minipage}[ht]{0.4\linewidth}
+        \includegraphics[width=13em, left]{viso}
+    \end{minipage}
+    \begin{minipage}[ht]{0.5\linewidth}
+        \begin{tabular}{lcl}
+            \multicolumn{3}{l}{\large\textbf{Jeferson Jesus Morales Mariciano}\normalsize} \\
+            %%% Gender %%%
+            Gender
+            &
+            \includegraphics[width=1em]{logo/gender} :
+            &
+            Male
+            \includegraphics[width=1em]{logo/male}
+            \\
+            %%% Birthday %%%
+            Birthday
+            &
+            \includegraphics[width=1em]{logo/cake} :
+            &
+            9 March 2002
+            \\
+            %%% Nationality %%%
+            Nationality
+            &
+            \includegraphics[width=1em]{logo/globe} :
+            &
+            Peruvian
+            \includegraphics[width=1em]{logo/peru},
+            Italian
+            \includegraphics[width=1em]{logo/italy}
+            \\
+        \end{tabular}
+
+        \vspace{7em}
+        
+        \begin{tabular}[l]{llll}
+        \href{https://www.linkedin.com/in/jeferson-morales-mariciano}{\includegraphics[width=1.5em]{logo/linkedin}}
+        &
+        \href{https://github.com/JekxDevil}
+        {\includegraphics[width=1.5em]{programming_language/github}} 
+        &
+        \href{https://join.skype.com/invite/dF93ltUFnj0T}
+        {\includegraphics[width=1.5em]{logo/skype}} 
+        &
+        \href{https://twitter.com/jekx123devil?t=QBCTKEW_qbXW735jlEijZA&s=09}
+        {\includegraphics[width=1.5em]{logo/twitter}}
+        \end{tabular}
+
+        \vspace{-5em}
+        
+    \end{minipage}
+\end{minipage}
+\bigskip\newline
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Work experience %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textcolor{titlecolor}{WORK EXPERIENCE}
+{\color{linecolor} \rule{0.8\linewidth}{0.5mm}}
+\bigskip\newline
+\includegraphics[width=3em]{logo/idea}
+10.02.2020 - 29.02.2020 / 08.06.2020 - 08.08.2020 / 01.07.2021 – 31.07.2021\\
+Software developer\\
+IDEA | Gianluca Di Buo\'\\
+Gross Ancona sector I, 12, 60131 Ancona (Italy)\\
+\href{https://www.idea-on-line.it/}
+{\textcolor{linked}{www.idea-on-line.it}}\\
+Tasks:
+\vspace{-0.7em}
+\begin{itemize}
+\setlength{\itemsep}{1.2pt}
+    \setlength{\parskip}{0.2pt}
+    \setlength{\parsep}{0pt}
+    \item Firmware developer with ESP boards (8266 - 32)
+    \item Micropython (Python for microcontrollers)
+    \item IoT connection manager to Amazon Web Services
+    \item Cloud-based development
+    \item Refactoring of a web service GUI with Ignition framework and Python
+\end{itemize}
+\hfill\break
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\includegraphics[width=3em]{logo/bitservice}
+17.05.2019 – 31.05.2019\\
+ICT technician\\
+BitService | Angelo Santoni\\
+Via dell'Industria, 17, 60021 Ancona (Italy)\\
+\href{http://www.bitserviceonline.it/}
+{\textcolor{linked}{www.bitserviceonline.it}}\\
+School-work experience tasks:
+\vspace{-0.7em}
+\begin{itemize}
+    \setlength{\itemsep}{1.2pt}
+    \setlength{\parskip}{0.2pt}
+    \setlength{\parsep}{0pt}
+    \item Computer hardware and software maintenance
+    \item E-learning creation content on Moodle platform about ``GDPR``
+    \item Company websites profiling
+    \item Websites with Wordpress CMS
+    \item Printer maintenance (pr2)
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Education and Training %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textcolor{titlecolor}{EDUCATION}
+{\color{linecolor} \rule{0.8\linewidth}{0.5mm}}
+\bigskip\newline
+\includegraphics[width=2em]{logo/usi}
+20.09.2021 – Present\\
+Bachelor in Informatics
+\includegraphics[width=0.9em]{logo/uk.png}
+ - scholarship\\
+Universit\'a della Svizzera italiana\\
+Via Buffi 13, 6900 Lugano (Switzerland)\\
+\href{https://www.usi.ch/en/education/bachelor/informatics}
+{\textcolor{linked}{www.usi.ch}}\\
+\hfill\break
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\includegraphics[width=1.7em]{logo/iisve}
+16.09.2016 – 29.06.2021 +||+ 100/100 with honours \\
+Secondary School Diploma in Computer Science\\
+Istituto di Istruzione Superiore Volterra Elia\\
+Via Esino 36, 60020 Ancona (Italy)\\
+\href{https://www.istitutovolterraelia.it/}
+{\textcolor{linked}{www.istutovolterraelia.it}}\\
+Subjects: languages (Italian, English), Science (physics, chemistry, biology, geography), Math \\
+IT specialisation:
+\vspace{-0.7em}
+\begin{itemize}
+    \setlength{\itemsep}{1.2pt}
+    \setlength{\parskip}{0.2pt}
+    \setlength{\parsep}{0pt}
+    \item Software management development in C\#, Java and C-like languages
+    \item Sequential, procedural and Object-Oriented programming paradigms
+    \item HTML, CSS and JavaScript for web development
+    \item PHP and ASPX with .Net framework for dynamic web development
+    \item Systems and networks (hardware, transmission systems and networking protocols)
+    \item Telecommunications (Analogic and digital electronics, main electronic components)
+\end{itemize}
+\vspace*{-0.8em}
+\hfill\break
+%%%%% CISCO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\includegraphics[width=2.2em]{programming_language/cisco}
+16.10.2020 – 08.05.2021\\
+CCNA ROUTING AND SWITCHING\\
+Cisco | Cisco Networking Academy\\
+\href{https://www.netacad.com/}
+{\textcolor{linked}{www.netacad.com}}
+\bigskip\newline
+%%%%% Comau %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\includegraphics[width=1.9em]{programming_language/comau}
+04.11.2020 Certificate Awarded Date +||+ 100,00/100,00 \\
+COMAU – Use of Programming for the C5G family of robots\\
+Comau | Comau Academy\\
+\href{https://www.comau.com}
+{\textcolor{linked}{www.comau.com}}\\
+\bigskip\newline
+%%%% CyberChallenge %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\includegraphics[width=1.9em]{logo/univpm}
+01.03.2019 – 31.05.2019\\
+CyberChallenge\\
+Cini | Universit\'a Politecnica delle Marche\\
+\href{https://cyberchallenge.it/}
+{\textcolor{linked}{www.cyberchallenge.it}}
+\bigskip\newline
+%%%%% ECDL %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\includegraphics[width=1.8em]{programming_language/ecdl}
+18.05.2019 Certificate Awarded Date\\
+ECDL – FULL STANDARD CERTIFICATE\\
+AICA | IIS Volterra Elia\\
+\href{https://www.icdl.it/}
+{\textcolor{linked}{www.icdl.it}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Digital skills %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textcolor{titlecolor}{DIGITAL SKILLS}
+{\color{linecolor} \rule{0.8\linewidth}{0.5mm}}
+\begin{table}[!hp]
+    \centering
+    \begin{tabular}{cc}
+        \includegraphics[width=2em]{programming_language/c} 
+        \includegraphics[width=1.8em]{programming_language/cpp} 
+        &
+        \begin{tikzpicture}
+        \draw [fill=white] (0,0) rectangle (5,.5);
+        \draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (3,.5);
+        \end{tikzpicture} 
+        \\
+        \includegraphics[width=2em]{programming_language/arduino} 
+        &
+        \begin{tikzpicture}
+        \draw [fill=white] (0,0) rectangle (5,.5);
+        \draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (2.5,.5);
+        \end{tikzpicture} 
+        \\
+        \includegraphics[width=2em]{programming_language/csharp}
+        \includegraphics[width=2em]{programming_language/visual_studio}
+        &
+        \begin{tikzpicture}
+        \draw [fill=white] (0,0) rectangle (5,.5);
+        \draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (3.5,.5);
+        \end{tikzpicture}
+        \\
+        \includegraphics[width=2em]{programming_language/racket}
+        \includegraphics[width=2em]{programming_language/lambda}
+        &
+        \begin{tikzpicture}
+        \draw [fill=white] (0,0) rectangle (5,.5);
+        \draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (3,.5);
+        \end{tikzpicture}
+        \\
+        \includegraphics[width=2em]{programming_language/java} 
+        &
+        \begin{tikzpicture}
+        \draw [fill=white] (0,0) rectangle (5,.5);
+        \draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (2,.5);
+        \end{tikzpicture} 
+        \\
+        \includegraphics[width=2.2em]{programming_language/python} 
+        &
+        \begin{tikzpicture}
+        \draw [fill=white] (0,0) rectangle (5,.5);
+        \draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (3.5,.5);
+        \end{tikzpicture} 
+        \\
+        \includegraphics[width=3.3em]{programming_language/mysql} 
+        &
+        \begin{tikzpicture}
+        \draw [fill=white] (0,0) rectangle (5,.5);
+        \draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (3.5,.5);
+        \end{tikzpicture} 
+        \\
+        \includegraphics[width=1.8em]{programming_language/html5}
+        \includegraphics[width=1.8em]{programming_language/css3}
+        \includegraphics[width=1.8em]{programming_language/js} 
+        &
+        \begin{tikzpicture}
+        \draw [fill=white] (0,0) rectangle (5,.5);
+        \draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (3.5,.5);
+        \end{tikzpicture} 
+        \\
+        \includegraphics[width=1.8em]{programming_language/linux_tux}
+        \includegraphics[width=1.7em]{programming_language/manjaro}
+        \includegraphics[width=2em]{programming_language/ubuntu}
+        &
+        \hspace*{0.1em}
+        \begin{tikzpicture}
+        \draw [fill=white] (0,0) rectangle (5,.5);
+        \draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (2.5,.5);
+        \end{tikzpicture}
+        \vspace*{0.6em}
+        \\
+        \LARGE\LaTeX\normalsize
+        &
+        \begin{tikzpicture}
+        \draw [fill=white] (0,0) rectangle (5,.5);
+        \draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (3,.5);
+        \end{tikzpicture}
+    \end{tabular}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Language skills %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textcolor{titlecolor}{LANGUAGE SKILLS}
+{\color{linecolor} \rule{0.8\linewidth}{0.5mm}}
+\smallskip\newline
+\textbf{Mother tongue(s)}:
+Spanish \includegraphics[width=1em]{logo/spain},
+Italian \includegraphics[width=1em]{logo/italy}
+\\
+
+\begin{minipage}[l]{\linewidth}
+    \begin{minipage}[l]{0.1\linewidth}
+        \vspace{1.5em}
+        \begin{tabular}[l]{c}
+            \vspace{1.5em}
+            English
+            \\\\
+            French
+        \end{tabular}
+    \end{minipage}
+    \begin{tabular}[r]{c|c|c}
+        \hline
+        \textcolor{titlecolor}{UNDERSTANDING} & 
+        \textcolor{titlecolor}{SPEAKING} &
+        \textcolor{titlecolor}{WRITING} \\
+        \hline
+            \begin{tabular}{c|c}
+            \textcolor{titlecolor}{Listening} & 
+            \textcolor{titlecolor}{Reading} \\
+            \hline
+            C1 & C1 \\
+            \end{tabular}
+        & 
+            \begin{tabular}{c|c}
+            \textcolor{titlecolor}{Spoken interaction} & 
+            \textcolor{titlecolor}{Spoken production} \\
+            \hline
+            C1 & C1 \\
+            \end{tabular}
+        & 
+            \begin{tabular}{c}
+            \\
+            C1 \\
+            \end{tabular}\\
+        \hline
+        \rowcolor{rowcertificatecolor}
+        \multicolumn{3}{c}{Preliminary - Cambridge Entry Level Certificate}\\
+        \hline
+        \rowcolor{rowcertificatecolor}
+        \multicolumn{3}{c}{A2 Waystage - ESOL Certificate}\\
+        \hline
+            \begin{tabular}{c|c}
+            A2 \hspace{1em} & \hspace{1em} A2 \\
+            \end{tabular}
+        & 
+            \begin{tabular}{c|c}
+            A2 \hspace{3em} & \hspace{3em} A2 \\
+            \end{tabular}
+        & 
+            \begin{tabular}{c}
+            A2 \\
+            \end{tabular}\\
+        \hline
+        \rowcolor{rowcertificatecolor}
+        \multicolumn{3}{c}{Diplôme d'études en langue française (DELF)}\\
+        \hline
+    \end{tabular}
+    \newline
+\end{minipage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Interests & others %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% field-related interests
+\begin{table}[ht]
+ \centering
+
+\begin{tabularx}{\textwidth}{lX}
+    \textbf{Field-related interests}: & 
+    
+    Olympiad in Informatics in team and solo 
+    \newline
+    Olympiad in Robotics, regional team winner 
+    \href{https://makerslab.it/olimpiadi-robotiche-ancona-2019/}
+    {``Makerslab 2019``}
+    \newline
+    Computer assembling and configuring
+    \newline
+    CTF cybersecurity competititions
+    \newline
+    Video and Photo editing
+    \\
+    
+    \textbf{Hobbies}: & 
+    Sea lifeguard, Scuba-diving, Theatre actor and speaker \\
+    
+    \textbf{Driving license(s)}: & 
+    A1, B
+\end{tabularx}
+\end{table}
+%\bigskip
+\newline
+%%% signature %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[b]{\textwidth}
+    \flushright
+    Jeferson Jesus Morales Mariciano\\
+\end{minipage}
+%\thispagestyle{endfooter}
+\end{document}
