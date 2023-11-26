@@ -1,0 +1,454 @@
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage{verbatim}
+\usepackage[left=0.4in, top=0.4in, right=0.4in, bottom=0.4in]{geometry} % Document margins
+\usepackage{amsmath}
+\usepackage{amsbsy}
+\usepackage[export]{adjustbox}
+\usepackage{wrapfig}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\graphicspath{ {./images/} }
+
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+\def\iconsize{0.4cm}
+\def\expsize{0.7cm}
+\def\intraexpvspace{0.15cm}
+\def\titlelistvspace{-0.15cm}
+
+\name{Jeferson Morales Mariciano}
+% You can merge both of these into a single line, if you do not have a website.
+\address{
+    \includegraphics[width=\iconsize, trim={0cm 1.5cm 0cm 0cm}]{phone-icon.png}
+    +39 3278 5578 18 
+    \\ 
+    \includegraphics[width=\iconsize, trim={0cm 1.5cm 0cm 0cm}]{maps-icon.png}
+    Switzerland
+} 
+\address{
+    \includegraphics[width=\iconsize, trim={0.1cm 0.4cm 0.3cm 0cm}]{linkedin-icon.png}
+    \href{https://www.linkedin.com/in/jefersonmm/}{linkedin.com/in/jefersonmm} 
+    \\ 
+    \includegraphics[width=\iconsize, trim={0cm 0.4cm 0cm 0cm}]{github-mark.png}
+    \href{https://github.com/JekxDevil}{github.com/JekxDevil} 
+    \\ 
+    \includegraphics[width=\iconsize, trim={0cm 3.5cm 0cm 0cm}]{email-icon.png}
+    \href{mailto:jeferson.morales.mariciano@gmail.com}{jeferson.morales.mariciano@gmail.com} 
+    % \\  \href{https://portfolio.com}{portfolio}
+}
+
+\begin{document}
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+\vspace{-0.2cm}
+\begin{rSection}{EXPERIENCE}
+
+    %-- Claranet ----------------------------------------------------------------------------
+    \includegraphics[width=0.8cm, trim={0cm 1.9cm 0cm 0cm}]{claranet-icon.png}
+    \textbf{Cloud Developer} \hfill Sep - Dec 2023\\
+    \hspace*{0.9cm}\href{https://www.claranet.com/}{Claranet}
+    \hfill \textit{Switzerland, Lugano}
+    \vspace{\titlelistvspace}\begin{itemize}
+        \itemsep -3pt {}
+        \item Provisioning cloud infrastructure on demand
+              with real time evaluation in assessment platform.
+        \item Assigning time constrained serverless challenges.
+              Grading: solution functionality, cloud conventions compliance.
+    \end{itemize}
+    \vspace*{-0.1cm}\hspace*{0.5cm}\underline{Skills}: \textbf{Terraform},
+    \textbf{boto3},
+    \textbf{AWS} (S3, API Gateway, Lambda, Cloudformation, IAM), %Cloud9,  
+    serverless,
+    IaC,
+    devops
+    \vspace{\intraexpvspace}
+
+    %-- UROP --------------------------------------------------------------------------------
+    \includegraphics[width=0.7cm, trim={0cm 10cm 0cm 0cm}]{si-icon.jpg}
+    \hspace*{0cm}\textbf{Undergraduate Student Researcher} \hfill Jul - Aug 2022\\
+    \hspace*{0.85cm}\href{https://www.si.usi.ch/}{Software Institute},
+    \href{https://luce.si.usi.ch/}{LuCE} research lab
+    \hfill \textit{Switzerland, Lugano}
+    \vspace{\titlelistvspace}\begin{itemize}
+        \itemsep -3pt {}
+        %\item \textbf{UROP} internship, Undergraduate Research Opportunities Program 
+        %at \href{https://luce.si.usi.ch/}{LuCE} research lab
+        \item Created back end API to convert Python3.10 programs' AST
+              into an expression based notional machine retaining equivalent tree graph structure.
+              Deep knowledge of syntax and core semantics of Python language required.
+              %with usage of design patterns 
+              %for parsing and exploring source code graph structures.
+    \end{itemize}
+    \vspace*{-0.1cm}\hspace*{0.5cm}\underline{Skills}: \textbf{fastAPI}, pytest, poetry, venv, design patterns, gitflow, restful API
+    \vspace{\intraexpvspace}
+
+    %-- IDEA -------------------------------------------------------------------------------
+    \includegraphics[width=0.75cm, trim={0cm 1.5cm 0cm 0cm}]{idea-icon.png}
+    \textbf{Software Developer} \hfill Feb, Jun - Aug 2020; Jul 2021\\
+    \hspace*{0.85cm}\href{https://idea-on-line.it/}{Idea Soc. Coop.} \hfill \textit{Italy, Ancona}
+    \vspace{\titlelistvspace}\begin{itemize}
+        \itemsep -3pt {}
+        %\item Projects involved: BOSET blood bag logger, DONET environmental sensors device 
+        % RaspberryPI 
+        \item Blood bag logger: developed docking station message passing and webapp with database and data visualization.
+        \item Environmental sensor device: designed micropython firmware
+              connected to \textbf{AWS}
+              with \textbf{Alexa} skill integration.
+              %\item Porting of company's SCADA to newer version of Ignition with Python3
+    \end{itemize}
+    \vspace*{-0.1cm}\hspace*{0.5cm}\underline{Skills}:
+    \textbf{flask},
+    \textbf{d3.js},
+    \textbf{AWS} (Lambda, IoT),
+    Alexa,
+    SQLite,
+    linux,
+    data visualization,
+    micropython,
+    nfc,
+    esp32
+    \vspace{\intraexpvspace}
+
+    %-- BitService --------------------------------------------------------------------------
+    \includegraphics[width=0.75cm, trim={0cm 1.5cm 0cm 0cm}]{bitservice-icon.png}
+    \textbf{ICT technician} \hfill May 2019 \\
+    \hspace*{0.85cm}BitService di Santoni Angelo \hfill \textit{Italy, Ancona}
+    \vspace{\titlelistvspace}\begin{itemize}
+        \itemsep -3pt {}
+        \item Improved websites with \textbf{wordpress}.
+              Profiling \textbf{GDPR} compliance.
+              Created \textbf{moodle} e-learning content for it. %EU regulations
+              %\item Building, setup and maintenance of computer hardware, OS and software
+    \end{itemize}
+    %{\bf Skills:} Wordpress, EU GDPR, Moodle, computer building/assembling
+
+\end{rSection}
+\begin{rSection}{Education}
+
+    %----------------------------------------------------------------------------------------
+    %	University
+    %----------------------------------------------------------------------------------------
+    \includegraphics[width=0.5cm, trim={0cm 5cm 0cm 0cm}]{usi-icon.png}
+    {\bf \underline{Bachelor of Computer Science}},
+    \href{https://www.usi.ch/en}{USI}, Switzerland
+    \hfill {2021 - Expected 2024}
+
+    \textbf{Scholarship}. GPA 9.24/10. Degree in English language.
+
+    \vspace{\titlelistvspace}\begin{itemize}
+        \itemsep -3pt {}
+        %Ateliers courses:
+        %with group leader role on
+        %\textit{JourneyTales} and \textit{Handshake} semester projects. 
+        %\item Programming Fundamentals courses: 
+        %\textit{Risk-Kellogs} and \textit{Pacman-Racket} semester projects
+        %with group leader role
+        \item Software Engineering: \textbf{full stack} web development.
+              UI / UX design in Figma, Balsamiq wireframes prototyping.
+              %Computer Graphics, Systems Programming, Operating Systems, Computer Architecture 
+              %\vspace*{-0.1cm}\hspace*{-0.4cm}\underline{Skills}:
+              %\textbf{WebGL},
+              %gcc,
+              %gdb,
+              %C,
+              %x86 assembly
+        \item Operating Systems:
+              \textbf{raytracing},
+              OpenGL,
+              WebGL,
+              C\texttt{++},
+              makefile,
+              \textbf{valgrind},
+              vagrant,
+              BSD kernel
+              %\vspace*{0.2cm}
+              % algorithms & data structures, data management, Networking, Information Retrieval, 
+              % experimatation \& evaluation, automata & formal languages
+              %\vspace*{-0.1cm}\hspace*{-0.4cm}\underline{Skills}: %python, %Terrier IR, %Scrapy, %subnetting, %regex
+        \item Relational \textbf{databases},
+              MySQL,
+              Spark,
+              \textbf{Search engine},
+              web crawling,
+              TCP/IP \textbf{networking},
+              wireshark
+              %\vspace*{0.2cm}
+              % numerical computing (i. Computational Science), numerical computing, statistics, linear algebra,
+              % discrete maths, calculus
+              %\vspace*{-0.1cm}\hspace*{-0.4cm}\underline{Skills}:
+              %Analysis
+        \item Maths:
+              \textbf{matlab},
+              graph partitioning / clustering,
+              \textbf{page rank},
+              simulation,
+              interpolation,
+              quadrature
+
+              %\vspace*{0.2cm}
+              %\textbf{WebGL}, 
+              %multithreading, 
+              \vspace*{-0.1cm}\hspace*{-0.4cm}\underline{Skills}:
+              \textbf{Agile},
+              \textbf{git},
+              shell,
+              UML,
+              concurrency,
+              web design,
+              domain driven design
+    \end{itemize}
+    \vspace{\intraexpvspace}
+    % Electives: Programming Challenges in Competitive Programming style
+    %----------------------------------------------------------------------------------------
+    %	School
+    %---------------------------------------------------------------------------------------- 
+    \includegraphics[width=0.5cm, trim={0cm 1cm 0cm 0cm}]{iisve-icon.png}
+    {\bf \underline{Diploma in Computer Science}},
+    \href{https://www.istitutovolterraelia.it/}{IIS Volterra Elia},
+    Italy
+    \hfill{2016 - 2021}
+
+    \textbf{Grade 100/100 with Honors}.
+
+    \vspace{\titlelistvspace}\begin{itemize}
+        \itemsep -3pt {}
+        \item Developed full stack web apps and resource management desktop applications with database connection.
+              % CRUD Merendero
+              %\item Full stack web development and programming language paradigms
+              %\item Networking: ISO/OSI stack, CISCO networking, threads, sockets
+              %\item Telecommunications: arduino embedded prototyping, analogic/digital electronic components
+              % Mathematics, Sciences: Physics, Chemistry, Biology, Geography
+    \end{itemize}
+
+    \vspace*{-0.1cm}\hspace*{0.5cm}\underline{Skills}:
+    \textbf{.Net},
+    \textbf{C\text{\#}},
+    Windows forms,
+    SQL server,
+    ASPX,
+    HTML, CSS, javascript,
+    C\texttt{++},
+    Linux,
+    Java,
+    PHP,
+    Joomla
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{PROJECTS}
+    \vspace{-1.25em}
+    \item \textbf{\href{https://gitlab.com/usi-si-teaching/bachelor-inf/2023/software-atelier-4/team-4-pufferfish/backend}
+        {
+            JourneyTales
+            \includegraphics[width=0.15cm, trim={10cm -10cm 0cm 0cm}]{ext-link-icon.png}
+        }}
+    {Leader, 12 developers team.
+        Built a \textbf{social media} to share travel experiences of users,
+        with friendship mechanisms and realtime notifications.
+        Responsive web application with OAuth2 and $\boldsymbol{> 99}$\textbf{\% test coverage}.
+        % fun fact >99% test cov
+        % Testing, containers, orchestration for deployment, Gitlab for Agile project management, 
+        % CQI and CI/CD.
+    }\\[0.1cm]
+    \hspace*{0.5cm}\underline{Skills}:
+    \textbf{Docker},
+    \textbf{Java Spring Boot},
+    \textbf{Vue},
+    Scrum,
+    GitOps,
+    mongodb,
+    junit,
+    nginx,
+    SonarQube,
+    \textbf{CI} / \textbf{CD},
+    SSE
+
+    \vspace{\intraexpvspace}
+    \item \textbf{\href{https://handshakeapp.ch}{
+            Handshake
+            \includegraphics[width=0.15cm, trim={10cm -10cm 0cm 0cm}]{ext-link-icon.png}
+        }}
+    {Built an \textbf{instant messaging} web application with video calls, group chats and friends
+        using MEVN stack deployed on AWS.
+        During \textbf{presentation $\boldsymbol{\approx1000}$ messages from $\boldsymbol{+80}$ users}.
+        Team of 4 developers.
+        \href{https://github.com/ogs-at-usi/handshake}{GitHub}.
+    }\\[0.1cm]
+    \hspace*{0.5cm}\underline{Skills}:
+    \textbf{Vue},
+    vuetify,
+    node.js,
+    express.js,
+    mongodb,
+    \textbf{web sockets},
+    material design,
+    peer.js,
+    mocha
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+% LEADERSHIP
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Leadership \& Accomplishments}
+    \begin{itemize}
+        \item \textbf{\href{https://swerc.eu/2022/teams/}{ICPC SWERC 2022}}
+              competed as USInchronous team representing USI. Competitive Programming.
+
+        \item \textbf{\href{https://www.makerslab.it/olimpiadi-robotiche-ancona-2019/}{1st team}}
+              classified in \textbf{Robotics Olympiad} regional phase in Italy.
+
+        \item \textbf{FFL Scholarship} awarded at USI, Switzerland from ranking in
+              \href{https://www.olimpiadi-informatica.it/index.php/selezione-territoriale-20.html}{Italian Olympiad in Informatics 2020}.
+
+        \item \textbf{\href{https://hackzurich.com/}{HackZurich}} $2022$ \& $2023$ , \href{https://www.junction2023.com/}{\textbf{Junction}} 2023
+              hackathons participation with leader role in \textbf{Zurich} and \textbf{Helsinki}.
+
+        \item \textbf{\href{https://cyberchallenge.it/}{CyberChallenge} youngest student}
+              in \textit{Marche} region, organised by the \textbf{Cybersecurity} National Lab.
+    \end{itemize}
+\end{rSection}
+
+% Contest for Marche region held in Ancona.
+% and scoring a remarkable ranking.
+% \item Attended the \textbf{ACM ICSA} International Symposium on Computer Architecture 2022 
+% workshops and office hours 
+%----------------------------------------------------------------------------------------
+% EXTRA CURRICULAR ACTIVITIES
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Extra-Curricular Activities}
+    Sea lifeguard.
+    Casual guitarist.
+    Actor.
+    CTFs cybersecurity participant.
+    OpenBSD enjoyer, GNU \text{+} Linux as daily drive.
+    Vim and tiling window managers enthusiast.
+    Suckless software connoisseur.
+    Attended ACM ICSIA 2022.
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% CERTIFICATIONS
+%----------------------------------------------------------------------------------------
+\begin{rSection}{CERTIFICATIONS}
+    \vspace{-1.25em}
+    \item \textbf{CCNA} {CISCO Routing and Switching}
+    %. Cisco Networking Academy}
+    %, Issued May 2021. Credential ID 1016658774.}
+    \hfill
+    \textbf{Comau} {Use and Programming for C5G family of robots}
+    %{Issued Nov 2020. Credential ID WmN8DebufQ.}
+    % | \textbf{LUISS} {Training for OII Regional Competition} 
+    %{Issued May 2020.}
+    %\item \textbf{CyberChallenge Student} {Issued Jul 2019.}
+    % | \textbf{ICDL Full Standard} {Associazione Italiana per l'Informatica e il Calcolo Automatico}
+    %, Issued May 2019. Credential ID IT2159274.}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% TECHINICAL STRENGTHS	
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Soft Skills}
+
+    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+        Soft Skills & teamwork management, flexibility, public speaking, resilient,  pressure performer, attention to detail
+    \end{tabular}
+
+    \vspace{\intraexpvspace}\textbf{Languages} \hspace*{1.35cm} \textbf{Level} \hspace*{4.15cm} \textbf{Certification} \\
+    \begin{tabular}{>{\ }p{3cm} p{5cm} p{10cm}}
+        \textbullet \hspace{0.2cm} English & Fluent (C2 level)
+                                           & FCE, PET University of Cambridge; A2 British Institutes \\
+        \textbullet \hspace{0.2cm} Italian & Native / Bilingual                                      \\
+        \textbullet \hspace{0.2cm} Spanish & Native / Bilingual                                      \\
+        \textbullet \hspace{0.2cm} French  & Intermediate (A2 certificate)
+                                           & DELF A2, France Éducation international                 \\
+        \textbullet \hspace{0.2cm} German  & Beginner (A2 level)                                     \\
+    \end{tabular}
+\end{rSection}
+\end{document}
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE
+%----------------------------------------------------------------------------------------
+%\begin{rSection}{OBJECTIVE}
+%{Software Engineer with 2+ years of experience in XXX, seeking full-time XXX roles.}
+%\end{rSection}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+% Minor in Linguistics \smallskip \\
+% Member of Eta Kappa Nu \\
+% Member of Upsilon Pi Epsilon \\
+% Relevant Coursework: 
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE
+%----------------------------------------------------------------------------------------
+%\begin{rSection}{OBJECTIVE}
+%{Software Engineer with 2+ years of experience in XXX, seeking full-time XXX roles.}
+%\end{rSection}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+% Minor in Linguistics \smallskip \\
+% Member of Eta Kappa Nu \\
+% Member of Upsilon Pi Epsilon \\
+% Relevant Coursework: 
+%----------------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+%%Technical Skills & MongoDB, Vuejs, Express, Nodejs, Windows Forms, Visual Studio, 
+FastAPI, Java, Java Swing, Java Spring Boot, Docker D \\
+%%Soft Skills & , B, C, D\\
+%%XYZ & A, B, C, D\\
+%\end{tabular}
+
+%\item \textbf{ICPC SWERC} 2022 participation. 
+%Participated in the International Collegiate Programming Contest, Southwestern Europe Regional.
+%Competed as USInchronous team representing USI.
+
+%\begin{itemize}
+%\item Sea lifeguard license. Società Nazionale di Salvamento, Issued Jul 2019. Credential ID 631357.
+%\item Computer assembling, hardware and custom PC builds.
+%\item Participating in CyberSecurity CTFs competitions.
+%\item OpenBSD enjoyer, GNU/Linux as daily drive.
+%\item Vim and tiling window managers enthusiast (i3, dwm), suckless software connoisseur
+%\item Theater actor at Iride Theater Company.
+%\end{itemize}
+
+
+
+
+\vspace{\intraexpvspace}
+\item \textbf{\href{https://github.com/micheledallerive/Risk-Kelloggs}{
+        Risk-Kellogs
+        \includegraphics[width=0.15cm, trim={10cm -10cm 0cm 0cm}]{ext-link-icon.png}
+    }}{Pair Programming, Test Driven Development. Modeled Risiko board game, object oriented paradigm.
+}\\[0.1cm]
+\hspace*{0.5cm}\underline{Skills}:
+\textbf{Java swing},
+design patterns,
+event driven,
+SOLID%,
+%OOP paradigm
+
+\vspace{\intraexpvspace}
+\item \textbf{\href{https://github.com/JekxDevil/pacman-racket}{
+        Pacman-Racket
+        \includegraphics[width=0.15cm, trim={10cm -10cm 0cm 0cm}]{ext-link-icon.png}
+    }}
+{Leading a team of 4 developers.
+    Remake of Pacman classic game in functional paradigm.
+}\\
+\hspace*{0.5cm}\underline{Skills}:
+\textbf{Scheme},
+immutability,
+vim
+%functional paradigm, 
+%\item \textbf{Merendero} {Built a CRUD app for secondary school connected to MS SQL server database
+%using windows forms for GUI implementation and C\text{\#} with .Net Framework.}
