@@ -34,8 +34,8 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-            - name: Github Action for LaTeX
-      - name: compile latex
+          
+      - name: Github Action for LaTeX
         uses: xu-cheng/latex-action@v3
         with:
           # The root LaTeX file to be compiled
