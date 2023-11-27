@@ -30,17 +30,17 @@ jobs:
         with:
           # The root LaTeX file to be compiled
           root_file: resume_faangpath.tex
-      
-      - run: mv resume_faangpath.pdf /tmp/
           
       - name: put file in portfolio
         uses: actions/checkout@v3
         with:
           repository: jekxdevil/jekxdevil.github.io
+          path: ./portfolio
           
       - run: |
           ls
-          mv /tmp/resume_faangpath.pdf .
+          mv resume_faangpath.pdf ./portfolio
+          cd portfolio
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add resume_faangpath.pdf
