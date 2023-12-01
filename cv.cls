@@ -18,7 +18,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\ProvidesClass{resume}[2023/10/14 v1 Resume class]
+\ProvidesClass{cv}[2023/10/14 v1 Resume class]
 
 \LoadClass[11pt,letterpaper]{article} % Font size and paper type
 
@@ -29,10 +29,10 @@
 
 \usepackage{hyperref}
 \hypersetup{
-    colorlinks=true,
-    linkcolor=blue,
-    filecolor=magenta,      
-    urlcolor=blue,
+  colorlinks=true,
+  linkcolor=blue,
+  filecolor=magenta,
+  urlcolor=blue,
 }
 
 \pagestyle{empty} % Suppress page numbers
@@ -52,9 +52,9 @@
 
 % \address command can be used to set the first, second, and third address (last 2 optional)
 \def \address #1 {
-    \@ifundefined{@addressone} 
-    { \def \@addressone {#1} } 
-    { \def \@addresstwo {#1} }
+  \@ifundefined{@addressone}
+  { \def \@addressone {#1} }
+  { \def \@addresstwo {#1} }
 }
 % \@ifundefined{@addresstwo} {
 %     \def \@addresstwo {#1}
@@ -72,23 +72,23 @@
 
 % \printaddress is used to style an address line (given as input)
 \def \printaddress #1{
-    \hspace*{-1cm}
-  \begingroup
-    \def \\ {\ }
-    \hfill #1
-  \endgroup
-  \hspace*{-1.3cm}
-  \par
+\hspace*{-1cm}
+\begingroup
+\def \\ {\ }
+\hfill #1
+\endgroup
+\hspace*{-1.3cm}
+\par
 }
 % \def \\ {\addressSep\ }
 % \addressskip
 
 % \printname is used to print the name as a page header
 \def \printname {
-\vspace*{-1.1cm}
+  \vspace*{-1.1cm}
   \begingroup
-    {\MakeUppercase{\namesize\bf \@name}}
-   \nameskip 
+  {\MakeUppercase{\namesize\bf \@name}}
+  \nameskip
   \endgroup
 }
 
@@ -100,13 +100,13 @@
 {
   \ori@document  % Begin document
   \printname % Print the name specified with \name
-  \@ifundefined{@addressone}{} 
+  \@ifundefined{@addressone}{}
   { % Print the first address if specified
-  \printaddress{\@addressone}
+    \printaddress{\@addressone}
   }
   \@ifundefined{@addresstwo}{}
   { % Print the second address if specified
-  \vspace*{-0.1cm}\printaddress{\@addresstwo}
+    \vspace*{-0.1cm}\printaddress{\@addresstwo}
   }
 }
 
@@ -124,10 +124,10 @@
   \sectionlineskip
   \hrule % Horizontal line
   \begin{list}{}{ % List for each individual item in the section
-    \setlength{\leftmargin}{0em} % Margin within the section
-  }
-  \item[]
-}{
+      \setlength{\leftmargin}{0em} % Margin within the section
+    }
+    \item[]
+      }{
   \end{list}
 }
 
@@ -135,16 +135,16 @@
 %	WORK EXPERIENCE FORMATTING
 %----------------------------------------------------------------------------------------
 \newenvironment{rSubsection}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
- {\bf #1} \hfill {#2} % Bold company name and date on the right
- \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
-  \\
-  {\em #3} \hfill {\em #4} % Italic job title and location
-  }\smallskip
-  \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
-   \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+{\bf #1} \hfill {#2} % Bold company name and date on the right
+\ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
+\\
+{\em #3} \hfill {\em #4} % Italic job title and location
+}\smallskip
+\begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
+  \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
-  \end{list}
-  \vspace{0.5em} % Some space after the list of bullet points
+\end{list}
+\vspace{0.5em} % Some space after the list of bullet points
 }
 
 % The below commands define the whitespace after certain things in the document 
