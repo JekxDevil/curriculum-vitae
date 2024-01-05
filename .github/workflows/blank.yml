@@ -26,11 +26,6 @@ jobs:
         with:
           root_file: cv.tex
 
-      - name: Import GPG key
-        uses: crazy-max/ghaction-import-gpg@v6
-        with:
-
-
       - name: Add cv to repository
         uses: planetscale/ghcommit-action@v0.1.6
         with:
