@@ -13,26 +13,32 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: Checkout repository
+      - name: Checkout repository under $GITHUB_WORKSPACE
         uses: actions/checkout@v3
           
-      - name: Github Action for LaTeX
+      - name: Github Action for the root LaTeX file to be compiled
         uses: xu-cheng/latex-action@v3
         with:
-          # The root LaTeX file to be compiled
           root_file: cv.tex
 
+      - name: Import GPG key
+        uses: crazy-max/ghaction-import-gpg@v6
+        with:
+
+
       - name: Add cv to repository
-        run: |
-          git config --global user.name "Github Actions"
-          git config --global user.email "no-reply@github.com"
-          git add -f cv.pdf
-          git commit -m "bot: update cv pdf"
-          git push
+        uses: planetscale/ghcommit-action@v0.1.6
+        with:
+          commit_message: "bot: update cv pdf"
+          repo: ${{ github.repository }}
+          branch: ${{ github.head_ref || github.ref_name }}
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
           
       # - name: put file in portfolio
