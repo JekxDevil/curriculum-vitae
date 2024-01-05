@@ -17,27 +17,37 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
           
       - name: Github Action for LaTeX
         uses: xu-cheng/latex-action@v3
         with:
           # The root LaTeX file to be compiled
           root_file: cv.tex
-          
-      - name: put file in portfolio
-        uses: actions/checkout@v3
-        with:
-          repository: jekxdevil/jekxdevil.github.io
-          path: ./portfolio
-          
-      - run: |
-          ls
-          mv cv.pdf ./portfolio
-          cd portfolio
-          git config user.name github-actions
-          git config user.email github-actions@github.com
+
+      - name: Add cv to repository
+        run: |
+          git config --global user.name "Github Actions"
+          git config --global user.mail "no-reply@github.com"
           git add cv.pdf
-          git commit -m "docs: update cv"
+          git commit -m "bot: update cv pdf"
           git push
+
+          
+      # - name: put file in portfolio
+      #   uses: actions/checkout@v3
+      #   with:
+      #     repository: jekxdevil/jekxdevil.github.io
+      #     path: ./portfolio
+          
+      # - run: |
+      #     ls
+      #     mv cv.pdf ./portfolio
+      #     cd portfolio
+      #     git config user.name github-actions
+      #     git config user.email github-actions@github.com
+      #     git add cv.pdf
+      #     git commit -m "docs: update cv"
+      #     git push
           
