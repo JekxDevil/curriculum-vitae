@@ -30,7 +30,7 @@ jobs:
         run: |
           git config --global user.name "Github Actions"
           git config --global user.mail "no-reply@github.com"
-          git add cv.pdf
+          git add -f cv.pdf
           git commit -m "bot: update cv pdf"
           git push
 
