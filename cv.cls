@@ -85,7 +85,7 @@
 
 % \printname is used to print the name as a page header
 \def \printname {
-  \vspace*{-1.1cm}
+  \vspace*{-0.1cm} % SPACE BEFORE THE NAME
   \begingroup
   {\MakeUppercase{\namesize\bf \@name}}
   \nameskip
