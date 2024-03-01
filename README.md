@@ -8,6 +8,7 @@ Taken from FAANGPath career template available from Overleaf.
 
 ## Get CV pdf
 
-Go to Releases and click on the latest tag, 
+Go to [Releases](https://github.com/JekxDevil/curriculum-vitae/releases/) 
+and click on the latest tag, 
 among its assets download the `cv.pdf` file containing the 
 compiled curriculum vitae updated.
