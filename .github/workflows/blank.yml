@@ -1,14 +1,8 @@
-name: CI
+name: pdf ci distribution
 
-# workflow on push or pull request from main branch
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
 
 jobs:
   build:
@@ -18,32 +12,19 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Checkout repository under $GITHUB_WORKSPACE
+      - name: checkout repository under $GITHUB_WORKSPACE
         uses: actions/checkout@v3
           
-      - name: Github Action for the root LaTeX file to be compiled
+      - name: github action for the root latex file to be compiled
         uses: xu-cheng/latex-action@v3
         with:
           root_file: cv.tex
 
-      - name: upload as artifact 
-        uses: actions/upload-artifact@v3
+      - name: upload pdf in release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
         with:
-          path: cv.pdf
-          
+          files: cv.pdf
+          body: curriculum vitae pdf file compiled from latex
+
       # - name: put file in portfolio
-      #   uses: actions/checkout@v3
-      #   with:
-      #     repository: jekxdevil/jekxdevil.github.io
-      #     path: ./portfolio
-          
-      # - run: |
-      #     ls
-      #     mv cv.pdf ./portfolio
-      #     cd portfolio
-      #     git config user.name github-actions
-      #     git config user.email github-actions@github.com
-      #     git add cv.pdf
-      #     git commit -m "docs: update cv"
-      #     git push
-          
