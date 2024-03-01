@@ -26,16 +26,10 @@ jobs:
         with:
           root_file: cv.tex
 
-      - name: Add cv to repository
-        uses: planetscale/ghcommit-action@v0.1.6
+      - name: upload as artifact 
+        uses: actions/upload-artifact@v3
         with:
-          commit_message: "bot: update cv pdf"
-          repo: ${{ github.repository }}
-          branch: ${{ github.head_ref || github.ref_name }}
-          file_pattern: cv.pdf
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-
+        path: cv.pdf
           
       # - name: put file in portfolio
       #   uses: actions/checkout@v3
