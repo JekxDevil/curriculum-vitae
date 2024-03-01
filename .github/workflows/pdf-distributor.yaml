@@ -2,7 +2,6 @@ name: pdf ci distribution
 
 on:
   push:
-    branches: [ "main" ]
     tags:
       - '*'
 
