@@ -4,11 +4,13 @@
 
 ## LaTeX code
 
-Taken from FAANGPath career template available from Overleaf.
+A custom version from the FAANGPath career template available on 
+[Overleaf](https://www.overleaf.com/latex/templates/faangpath-simple-template/npsfpdqnxmbc).
 
 ## Get CV pdf
 
-Go to [Releases](https://github.com/JekxDevil/curriculum-vitae/releases/) 
+Go to 
+[Releases](https://github.com/JekxDevil/curriculum-vitae/releases/) 
 and click on the latest tag, 
 among its assets download the `cv.pdf` file containing the 
 compiled curriculum vitae updated.
