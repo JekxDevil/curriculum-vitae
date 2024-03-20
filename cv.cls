@@ -72,23 +72,26 @@
 
 % \printaddress is used to style an address line (given as input)
 \def \printaddress #1{
-\hspace*{-1cm}
+%\hspace*{-1cm}
 \begingroup
-\def \\ {\ }
-\hfill #1
+\def \\ {\addressSep\ }
+\centerline{#1}
 \endgroup
-\hspace*{-1.3cm}
+%\hspace*{-1.3cm}
 \par
+\addressskip
 }
 % \def \\ {\addressSep\ }
 % \addressskip
 
 % \printname is used to print the name as a page header
 \def \printname {
-  \vspace*{-0.1cm} % SPACE BEFORE THE NAME
+  %\vspace*{-0.1cm} % SPACE BEFORE THE NAME
   \begingroup
+  \hfil
   {\MakeUppercase{\namesize\bf \@name}}
-  \nameskip
+  \hfil
+  \nameskip\break
   \endgroup
 }
 
@@ -152,5 +155,5 @@
 \def\namesize{\LARGE} % Size of the name at the top of the document
 \def\addressskip{\smallskip} % The space between the two address (or phone/email) lines
 \def\sectionlineskip{\medskip} % The space above the horizontal line for each section 
-\def\nameskip{\smallskip} % The space after your name at the top
+\def\nameskip{\medskip} % The space after your name at the top
 \def\sectionskip{\medskip} % The space after the heading section
