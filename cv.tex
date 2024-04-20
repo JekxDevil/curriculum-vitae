@@ -1,13 +1,14 @@
 \documentclass{cv} % Use the custom resume.cls style
 
 \usepackage{verbatim}
-\usepackage[left=0.4in, top=0.4in, right=0.4in, bottom=0.4in]{geometry} % Document margins
+\usepackage[left=0.1in, top=0.2in, right=0.1in, bottom=0.2in, showframe=false]{geometry} % Document margins
 \usepackage{amsmath}
 \usepackage{amsbsy}
 \usepackage[export]{adjustbox}
 \usepackage{wrapfig}
 \usepackage{enumitem}
 \usepackage{hyperref}
+\usepackage{tikz}
 
 \graphicspath{ {./images/} }
 
@@ -20,7 +21,6 @@
 \def\titlelistvspace{-0.15cm}
 
 \name{Jeferson Morales Mariciano}
-% You can merge both of these into a single line, if you do not have a website.
 \address{
     \includegraphics[width=\iconsize, trim={0cm 0.01cm 0.01cm 0cm}]{person-icon.png}
     Italian, Peruvian
@@ -51,222 +51,151 @@
 }
 
 \begin{document}
+
+% Strong skills: docker, java, python, flask, 
+% linux, fastAPI, poetry venv, terraform, networking
+
+% BLANK KEYWORDS
+% git, shell scripting, uml,  vagrant, solid, domain driven design, linux
+
+
+
 %----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE
+% EXTRA CURRICULAR ACTIVITIES
 %----------------------------------------------------------------------------------------
-%\vspace{-0cm}
+
+\begin{minipage}[l]{0.3\linewidth}
+
+\begin{minipage}[c]{\linewidth}
+    \centering
+    \begin{tikzpicture}
+    \clip (0,0) circle (2cm); 
+    \node[anchor=center] at (0.2,0)   
+    {\includegraphics[width=\linewidth, trim={0cm 0cm 0cm 0cm}]{profile-picture.jpg}};
+    \end{tikzpicture}
+\end{minipage}
+
+% --- BIO -------------------------------------------------------------------------------
+\begin{rSection}{BIOGRAPHY}
+    \item A software engineer studying AI,
+    dedicated to devops
+    still using Vim \& tiling window managers in Linux
+\end{rSection}
+
+% --- CERTIFICATIONS --------------------------------------------------------------------
+\begin{rSection}{CERTIFICATIONS}
+    \item \underline{CCNA} {CISCO, 2021}
+    \item \underline{Comau} {Robots programming, 2020}
+    \item \underline{ECDL} {AICA, 2019}
+\end{rSection}
+
+% --- LANGUAGES --------------------------------------------------------------
+\begin{rSection}{Languages}
+    \item \begin{tabular}{ll}
+        English & Fluent B2 Certificate     \\
+        Italian & Native                    \\
+        Spanish & Native                    \\
+        French  & A2 Certificate            \\
+        German  & Beginner                  \\
+    \end{tabular}
+\end{rSection}
+\end{minipage}
+\begin{minipage}[l]{0.7\linewidth}
+\begin{rSection}{Education}
+    % --- UNIVERSITY --------------------------------------------------------------------   
+    \includegraphics[width=0.5cm, trim={0cm 5cm 0cm 0cm}]{usi-icon.png}
+    {\bf Bachelor in Computer Science},
+    \hfill \href{https://www.usi.ch/en}{USI}, Switzerland\\
+    Scholarship. Degree in English. GPA 5.59/6. 
+    \hfill {Sep 2021 - Jun 2024} 
+    \vspace{\intraexpvspace}
+    \vspace{\intraexpvspace}
+
+    % --- School -------------------------------------------------------------------------
+    \includegraphics[width=0.5cm, trim={0cm 1cm 0cm 0cm}]{iisve-icon.png}
+    {\bf High School Diploma in Computer Science},
+    \hfill \href{https://www.istitutovolterraelia.it/}{IIS Volterra Elia}, Italy \\
+    Graduated with Honors.
+    \hfill {Sep 2016 - Jun 2021} 
+\end{rSection}
+% --- WORK EXPERIENCE -------------------------------------------------------------------   
 \begin{rSection}{EXPERIENCE}
+    \vspace{0.2cm}
 
-
-    %-- TA --------------------------------------------------------------------------------
+    %--- TA --------------------------------------------------------------------------------
     \includegraphics[width=0.7cm, trim={0cm 10cm 0cm 0cm}]{usi-icon.png}
     \hspace*{0cm}\textbf{Teaching Assistant} \hfill Feb - Jun 2024\\
     \hspace*{0.85cm}\href{https://www.usi.ch/}{USI} Università della Svizzera italiana
-    %\href{https://luce.si.usi.ch/}{LuCE} research lab
     \hfill \textit{Switzerland, Lugano}
-    \vspace{\titlelistvspace}\begin{itemize}
-        \itemsep -3pt {}
+    \begin{itemize}
         \item \href{https://search.usi.ch/it/corsi/35268192/software-atelier-4-software-engineering-project}{Software Engineering}
               course by Dr. A. Mocci: requirements engineering, software quality and devops.
 
         \item \href{https://search.usi.ch/it/corsi/35268184/data-management}{Data Management}
               course by Prof. P. T. Eugster: database design, query execution, transaction processing.
+              Relational databases, MySQL, Spark.
     \end{itemize}
-    \vspace*{-0.1cm}\hspace*{0.5cm}\underline{Skills}: \textbf{project management}, Agile development, design patterns, relational databases, MySQL, Spark
+    \vspace{\intraexpvspace}
     \vspace{\intraexpvspace}
 
-    %-- Claranet ----------------------------------------------------------------------------
+    %--- Claranet ----------------------------------------------------------------------------
     \includegraphics[width=0.7cm, trim={0cm 15cm 0cm 0cm}]{claranet-logo.png}
     \textbf{Cloud Developer} \hfill Sep - Dec 2023\\
     \hspace*{0.85cm}\href{https://www.claranet.com/}{Claranet} - Cloud Service Provider
     \hfill \textit{Switzerland, Lugano}
-    \vspace{\titlelistvspace}\begin{itemize}
-        \itemsep -3pt {}
-        \item Provisioning cloud infrastructure on demand
-              with real time evaluation in SOAR assessment platform.
-              Assigning time constrained challenges with grading based on solution functionality
-              and cloud conventions compliancy.
+    \begin{itemize}
+        \item Provisioning infrastructure with \textbf{Terraform} and \textbf{Cloudformation}
+            IaC tools.
+
+        \item Designed cloud assessment challenges with boto3 and \textbf{AWS} services.
+              % with real time evaluation in SOAR assessment platform.
+              % Assigning time constrained challenges with grading based 
+              % on solution functionality and cloud conventions compliancy.
     \end{itemize}
-    \vspace*{-0.1cm}\hspace*{0.5cm}\underline{Skills}: \textbf{Terraform},
-    \textbf{boto3},
-    \textbf{AWS} (Cloudformation, Lambda, API Gateway, S3, IAM), %Cloud9,  
-    serverless,
-    IaC,
-    devops
+    \vspace{\intraexpvspace}
     \vspace{\intraexpvspace}
 
-    %-- UROP --------------------------------------------------------------------------------
+    %--- UROP --------------------------------------------------------------------------------
     \includegraphics[width=0.7cm, trim={0cm 10cm 0cm 0cm}]{si-icon.jpg}
     \hspace*{0cm}\textbf{Undergraduate Student Researcher} \hfill Jul - Aug 2022\\
     \hspace*{0.85cm}\href{https://www.si.usi.ch/}{USI Software Institute},
     \href{https://luce.si.usi.ch/team/}{LuCE} research lab
     \hfill \textit{Switzerland, Lugano}
-    \vspace{\titlelistvspace}\begin{itemize}
-        \itemsep -3pt {}
-        %\item \textbf{UROP} internship, Undergraduate Research Opportunities Program 
-        %at \href{https://luce.si.usi.ch/}{LuCE} research lab
-        \item Created backend to convert Python programs' AST
+    \begin{itemize}
+        \item Created backend with \textbf{FastAPI} to convert \textbf{Python} programs' AST
               into an expression-based notional machine retaining equivalent structure.
-              Part of \textit{Expression tutor} webapp for assessment of structure, typing, and evaluation of expressions.
-              %with usage of design patterns 
-              %for parsing and exploring source code graph structures.
+              % Part of \textit{Expression tutor} webapp 
+              % for assessment of structure, typing, and evaluation of expressions.
+              % with usage of design patterns 
+              % for parsing and exploring source code graph structures.
+              % pytest, poetry, venv, design patterns, gitflow, Python3.10
     \end{itemize}
-    \vspace*{-0.1cm}\hspace*{0.5cm}\underline{Skills}: \textbf{FastAPI}, pytest, poetry, venv, design patterns, gitflow, restful API, Python3.10
+    \vspace{\intraexpvspace}
     \vspace{\intraexpvspace}
 
-    %-- IDEA -------------------------------------------------------------------------------
+    %--- IDEA -------------------------------------------------------------------------------
     \includegraphics[width=0.75cm, trim={0cm 1.5cm 0cm 0cm}]{idea-icon.png}
     \textbf{Software Developer} \hfill Feb, Jun - Aug 2020; Jul 2021\\
-    \hspace*{0.85cm}\href{https://idea-on-line.it/}{Idea Soc. Coop.} - Industrial Automation \hfill \textit{Italy, Ancona}
-    \vspace{\titlelistvspace}\begin{itemize}
-        \itemsep -3pt {}
-        %\item Projects involved: BOSET blood bag logger, DONET environmental sensors device 
-        % RaspberryPI 
-        \item Blood bag logger: developed message passing for docking station and embedded web app for data visualization.
-        \item Environmental sensor: designed micropython firmware
-              connected to \textbf{AWS}
-              with \textbf{Alexa} skill integration.
-              %\item Porting of company's SCADA to newer version of Ignition with Python3
+    \hspace*{0.85cm}\href{https://idea-on-line.it/}{Idea Soc. Coop.} - Industrial Automation 
+    \hfill \textit{Italy, Ancona}
+    \begin{itemize}
+        \item Blood bag logger: 
+            developed embedded web app for data visualization in \textbf{Flask}.
+
+        \item Environmental sensor: 
+            sketched micropython firmware with \textbf{AWS Alexa} skill.
     \end{itemize}
-    \vspace*{-0.1cm}\hspace*{0.5cm}\underline{Skills}:
-    \textbf{flask},
-    \textbf{d3.js},
-    AWS (Lambda, IoT),
-    Alexa,
-    SQLite,
-    linux,
-    micropython,
-    nfc,
-    esp32
+    \vspace{\intraexpvspace}
     \vspace{\intraexpvspace}
 
     %-- BitService --------------------------------------------------------------------------
     \includegraphics[width=0.75cm, trim={0cm 1.5cm 0cm 0cm}]{bitservice-icon.png}
     \textbf{ICT technician} \hfill May 2019 \\
     \hspace*{0.85cm}BitService di Santoni Angelo - IT Consulting \hfill \textit{Italy, Ancona}
-    \vspace{\titlelistvspace}\begin{itemize}
-        \itemsep -3pt {}
-        \item Improved websites with \textbf{wordpress}.
-              Profiling \textbf{GDPR} compliance.
-              Created \textbf{moodle} e-learning content for it. %EU regulations
-              %\item Building, setup and maintenance of computer hardware, OS and software
-    \end{itemize}
-    %{\bf Skills:} Wordpress, EU GDPR, Moodle, computer building/assembling
-
-\end{rSection}
-%\vspace{0.1cm}
-\begin{rSection}{Education}
-
-    %----------------------------------------------------------------------------------------
-    %	University
-    %----------------------------------------------------------------------------------------
-    \includegraphics[width=0.5cm, trim={0cm 5cm 0cm 0cm}]{usi-icon.png}
-    {\bf \underline{Bachelor in Computer Science}},
-    \href{https://www.usi.ch/en}{USI}, Switzerland
-    \hfill {Sep 2021 - Expected Jun 2024}
-
-    \textbf{Scholarship}. GPA 5.59/6. Degree in English language.
-
-    \vspace{\titlelistvspace}\begin{itemize}
-        \itemsep -3pt {}
-        %Ateliers courses:
-        %with group leader role on
-        %\textit{JourneyTales} and \textit{Handshake} semester projects. 
-        %\item Programming Fundamentals courses: 
-        %\textit{Risk-Kellogs} and \textit{Pacman-Racket} semester projects
-        %with group leader role
-        \item Software Engineering: \textbf{fullstack} web development.
-              UI/UX design in Figma, Balsamiq wireframes prototyping.
-              %Computer Graphics, Systems Programming, Operating Systems, Computer Architecture 
-              %\vspace*{-0.1cm}\hspace*{-0.4cm}\underline{Skills}:
-              %\textbf{WebGL},
-              %gcc,
-              %gdb,
-              %C,
-              %x86 assembly
-        \item Operating Systems,
-              \textbf{raytracing},
-              OpenGL,
-              \textbf{Search engine},
-              web crawling,
-              \textbf{networking},
-              wireshark.
-              %\vspace*{0.2cm}
-              % algorithms & data structures, data management, Networking, Information Retrieval, 
-              % experimatation \& evaluation, automata & formal languages
-              %\vspace*{-0.1cm}\hspace*{-0.4cm}\underline{Skills}: %python, %Terrier IR, %Scrapy, %subnetting, %regex
-              %\vspace*{0.2cm}
-              % numerical computing (i. Computational Science), numerical computing, statistics, linear algebra,
-              % discrete maths, calculus
-              %\vspace*{-0.1cm}\hspace*{-0.4cm}\underline{Skills}:
-              %Analysis
-        \item Maths:
-              \textbf{matlab},
-              graph partitioning \& clustering,
-              \textbf{conjugate gradient},
-              page rank,
-              least squares,
-              data fitting.
-              %\vspace*{0.2cm}
-              %\textbf{WebGL}, 
-              %multithreading, 
-    \end{itemize}
-    \vspace*{-0.1cm}\hspace*{0.5cm}\underline{Skills}:
-    \textbf{git},
-    shell scripting,
-    UML,
-    C\texttt{++},
-    \textbf{valgrind},
-    makefile,
-    vagrant,
-    SOLID,
-    domain driven design
-    \vspace{\intraexpvspace}
-    %concurrency,web design,WebGL,BSD kernel.
-    % Electives: Programming Challenges in Competitive Programming style
-
-    %----------------------------------------------------------------------------------------
-    %	School
-    %---------------------------------------------------------------------------------------- 
-    \includegraphics[width=0.5cm, trim={0cm 1cm 0cm 0cm}]{iisve-icon.png}
-    {\bf \underline{High School Diploma in Computer Science}},
-    \href{https://www.istitutovolterraelia.it/}{IIS Volterra Elia},
-    Italy
-    \hfill{Sep 2016 - Jun 2021}
-
-    \textbf{Grade 100/100 with Honors}.
-
-    \vspace{\titlelistvspace}\begin{itemize}
-        \itemsep -3pt {}
-        \item Developed full stack web apps and resource management desktop applications with database connection.
-              % CRUD Merendero
-              %\item Full stack web development and programming language paradigms
-              %\item Networking: ISO/OSI stack, CISCO networking, threads, sockets
-              %\item Telecommunications: arduino embedded prototyping, analogic/digital electronic components
-              % Mathematics, Sciences: Physics, Chemistry, Biology, Geography
-    \end{itemize}
-
-    \vspace*{-0.1cm}\hspace*{0.5cm}\underline{Skills}:
-    \textbf{.Net},
-    \textbf{C\text{\#}},
-    Windows forms,
-    SQL server,
-    ASPX,
-    HTML, CSS, javascript,
-    C\texttt{++},
-    Linux,
-    Java,
-    PHP,
-    Joomla
 \end{rSection}
 
-
-%----------------------------------------------------------------------------------------
-%	PROJECTS SECTION
-%----------------------------------------------------------------------------------------
-\newpage
+%--- PROJECTS SECTION -------------------------------------------------------------------
 \begin{rSection}{PROJECTS}
-    \vspace{-1.25em}
     \item \textbf{\href{https://pufferfish.sa4.usi.ch/login}
         {
             JourneyTales
@@ -285,14 +214,15 @@
     \textbf{Docker},
     \textbf{Java Spring Boot},
     \textbf{Vue},
-    Scrum,
     GitOps,
-    mongodb,
     junit,
     nginx,
     SonarQube,
     CI/CD,
-    SSE
+    fullstack
+    %Scrum,
+    %mongodb,
+    %SSE
 
     \vspace{\intraexpvspace}
     \item \textbf{\href{https://handshakeapp.ch}{
@@ -317,86 +247,41 @@
     mocha
 \end{rSection}
 
-
-%----------------------------------------------------------------------------------------
-% LEADERSHIP
-%----------------------------------------------------------------------------------------
+%--- LEADERSHIP -------------------------------------------------------------------------
 \begin{rSection}{Leadership \& Accomplishments}
+    \vspace{0.2cm}
     \begin{itemize}
-        \item \href{https://swerc.eu/2022/teams/}{ICPC SWERC 2022}
-              competed as USInchronous team representing USI. Competitive Programming.
+        \itemsep 0.2em
+    \item \href{https://swerc.eu/2022/teams/}{ICPC SWERC 2022}
+        competed as USInchronous team representing USI. % Competitive Programming.
 
-        \item \href{https://www.makerslab.it/olimpiadi-robotiche-ancona-2019/}{1st team}
-              classified in \textbf{Robotics} Olympiad 2019 regional phase in Italy.
+    \item \href{https://www.makerslab.it/olimpiadi-robotiche-ancona-2019/}{1st team}
+        classified in \textbf{Robotics} Olympiad 2019 regional phase in Italy.
 
-        \item \textbf{Swiss scholarship} awarded at USI, Switzerland from ranking in
-              \href{https://www.olimpiadi-informatica.it/index.php/selezione-territoriale-20.html}{Italian Olympiad in Informatics 2020}.
-              %FFL
+    \item \textbf{Scholarship} awarded in \textbf{Switzerland} from 
+        \href{https://www.olimpiadi-informatica.it/index.php/selezione-territoriale-20.html}{Italian Informatics Olympiad 2020}.
+        %FFL
 
-        \item \textbf{Representant} of the \textbf{Faculty} of Informatics in the student council at USI.
-        \item \href{https://hackzurich.com/}{HackZurich} $2022$ \& $2023$ , \href{https://www.junction2023.com/}{Junction} 2023
-              hackathons participation with leader role in \textbf{Zurich} and \textbf{Helsinki}.
+    \item \textbf{Representant} of the \textbf{Faculty} of Informatics in the student council at USI.
 
-        \item \href{https://cyberchallenge.it/}{CyberChallenge} 2019 \textbf{youngest} student
-              in \textit{Marche} region, organised by the \textbf{Cybersecurity} National Lab.
+    \item \href{https://hackzurich.com/}{HackZurich}, 
+        \href{https://www.junction2023.com/}{Junction} 
+        hackathons participation in \textbf{Zurich} and \textbf{Helsinki}.
+    % $2022$ \& $2023$; 2023 with leader role 
+
+    \item \href{https://cyberchallenge.it/}{CyberChallenge} 2019 \textbf{youngest} student
+        in \textit{Marche} region, organised in Italy. 
+        % Cybersecurity National Lab.
     \end{itemize}
 \end{rSection}
 
 % Contest for Marche region held in Ancona.
 % and scoring a remarkable ranking.
-% \item Attended the \textbf{ACM ICSA} International Symposium on Computer Architecture 2022 
-% workshops and office hours 
-%----------------------------------------------------------------------------------------
-% EXTRA CURRICULAR ACTIVITIES
-%----------------------------------------------------------------------------------------
-\begin{rSection}{Extra-Curricular Activities}
-    Sea lifeguard.
-    Casual guitarist.
-    Actor.
-    CTFs cybersecurity participant.
-    OpenBSD enjoyer, GNU \text{+} Linux as daily drive.
-    Vim and tiling window managers enthusiast.
-    Suckless software connoisseur.
-    Attended ACM ICSIA 2022.
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-% CERTIFICATIONS
-%----------------------------------------------------------------------------------------
-\begin{rSection}{CERTIFICATIONS}
-    \vspace{-1.25em}
-    \item \textbf{CCNA} {CISCO Routing and Switching, 2021}
-    %. Cisco Networking Academy}
-    %, Issued May 2021. Credential ID 1016658774.}
-    \hfill
-    \textbf{Comau} {Use and Programming for C5G family of robots, 2020}
-    %{Issued Nov 2020. Credential ID WmN8DebufQ.}
-    % | \textbf{LUISS} {Training for OII Regional Competition} 
-    %{Issued May 2020.}
-    %\item \textbf{CyberChallenge Student} {Issued Jul 2019.}
-    % | \textbf{ICDL Full Standard} {Associazione Italiana per l'Informatica e il Calcolo Automatico}
-    %, Issued May 2019. Credential ID IT2159274.}
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-% TECHINICAL STRENGTHS	
-%----------------------------------------------------------------------------------------
-\begin{rSection}{Languages}
-
-    \vspace{\intraexpvspace}\textbf{Language} \hspace*{1.35cm} \textbf{Level} \hspace*{4.15cm} \textbf{Certification} \\
-    \begin{tabular}{>{\ }p{3cm} p{5cm} p{10cm}}
-        \textbullet \hspace{0.2cm} English & Fluent (C2 level)
-                                           & FCE (2021) \& PET (2019), University of Cambridge
-        \newline A2 (2016), British Institutes                                                 \\
-        \textbullet \hspace{0.2cm} Italian & Native / Bilingual                                \\
-        \textbullet \hspace{0.2cm} Spanish & Native / Bilingual                                \\
-        \textbullet \hspace{0.2cm} French  & Intermediate (A2 certificate)
-                                           & DELF A2 (2016), France Éducation international    \\
-        \textbullet \hspace{0.2cm} German  & Beginner (A2 level)                               \\
-    \end{tabular}
-\end{rSection}
+\end{minipage}
 \end{document}
-%Soft Skills & flexibility, public speaking, resilient,  pressure performer, attention to detail
+
+%!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %----------------------------------------------------------------------------------------
 %	OBJECTIVE
@@ -428,9 +313,6 @@
 %\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
 %%Technical Skills & MongoDB, Vuejs, Express, Nodejs, Windows Forms, Visual Studio, 
 FastAPI, Java, Java Swing, Java Spring Boot, Docker D \\
-%%Soft Skills & , B, C, D\\
-%%XYZ & A, B, C, D\\
-%\end{tabular}
 
 %\item \textbf{ICPC SWERC} 2022 participation. 
 %Participated in the International Collegiate Programming Contest, Southwestern Europe Regional.
@@ -447,61 +329,118 @@ FastAPI, Java, Java Swing, Java Spring Boot, Docker D \\
 
 
 
-
-\vspace{\intraexpvspace}
-\item \textbf{\href{https://github.com/micheledallerive/Risk-Kelloggs}{
-        Risk-Kellogs
-        \includegraphics[width=0.15cm, trim={10cm -10cm 0cm 0cm}]{ext-link-icon.png}
-    }}{Pair Programming, Test Driven Development. Modeled Risiko board game, object oriented paradigm.
-}\\[0.1cm]
-\hspace*{0.5cm}\underline{Skills}:
-\textbf{Java swing},
-design patterns,
-event driven,
-SOLID%,
-%OOP paradigm
-
-\vspace{\intraexpvspace}
-\item \textbf{\href{https://github.com/JekxDevil/pacman-racket}{
-        Pacman-Racket
-        \includegraphics[width=0.15cm, trim={10cm -10cm 0cm 0cm}]{ext-link-icon.png}
-    }}
-{Leading a team of 4 developers.
-    Remake of Pacman classic game in functional paradigm.
-}\\
-\hspace*{0.5cm}\underline{Skills}:
-\textbf{Scheme},
-immutability,
-vim
-%functional paradigm, 
-%\item \textbf{Merendero} {Built a CRUD app for secondary school connected to MS SQL server database
-%using windows forms for GUI implementation and C\text{\#} with .Net Framework.}
-
-
 TODO: add to portfolio
+
+PROJECTS:
+Risk-Kellogs: https://github.com/micheledallerive/Risk-Kelloggs
+Pair Programming, Test Driven Development. Modeled Risiko board game, object oriented paradigm
+Java Swing, design patterns, event driven, SOLID, OOP paradigm
+
+Pacman-Racket: https://github.com/JekxDevil/pacman-racket
+Leading a team of 4 developers. Remake of Pacman classic game in functional paradigm.
+Scheme, immutability, vim, functional paradigm, 
+
+Merendero: Built a CRUD app for secondary school connected to MS SQL server database
+using windows forms for GUI implementation and C# with .Net Framework.
+
+UNIVERSITY:
 Programming Fundamentals:
 - Functional in Racket, a LISP dialect
 - Imperative, Procedural, OOP in Java
 - Concurrency in Java
-
 Software Ateliers:
 - Fundamentals of Informatics
 - UI/UX Design
 - Web Development with MEVN stack
 - Software Engineering + Course Project using Java Spring Boot
-
 Mathematical oriented courses:
 - Calculus
 - Linear Algebra
 - Discrete Structures
 - Probability & Statistics
 - Computational Science Theory
-
 Algorithms & Data Structures in Python3
 Computer Architecture, Operating Systems in C
 Systems Programming in C++
 Automata & Formal Languages
 Computer Networking
-
 Electives:
 Programming Challenges in Competitive Programming styleProgramming Fundamentals: - Functional in Racket, a LISP dialect - Imperative, Procedural, OOP in Java - Concurrency in Java Software Ateliers: - Fundamentals of Informatics - UI/UX Design - Web Development with MEVN stack - Software Engineering + Course Project using Java Spring Boot Mathematical oriented courses: - Calculus - Linear Algebra - Discrete Structures - Probability & Statistics - Computational Science Theory Algorithms & Data Structures in Python3 Computer Architecture, Operating Systems in C Systems Programming in C++ Automata & Formal Languages Computer Networking Electives: Programming Challenges in Competitive Programming style
+
+MICROSOFT: .Net, C#, Windows forms, SQL server, ASPX
+
+HIGH SCHOOL: 
+HTML, CSS, javascript, C++, Java, PHP, Joomla
+Developed full stack web apps and resource management desktop applications with database connection.
+CRUD Merendero, Full stack web development and programming language paradigms, 
+Networking: ISO/OSI stack, CISCO networking, threads, sockets
+Telecommunications: arduino embedded prototyping, analogic/digital electronic components
+Mathematics, Sciences: Physics, Chemistry, Biology, Geography
+
+CERTIFICATIONS:
+CCNA, CISCO Routing and Switching, 2021. 
+Cisco Networking Academy Issued May 2021. Credential ID 1016658774.
+
+Comau Use and Programming for C5G family of robots, 2020
+Issued Nov 2020. Credential ID WmN8DebufQ.
+
+CyberChallenge Student Issued Jul 2019.
+
+ICDL Full Standard, AICA. Issued May 2019. Credential ID IT2159274.
+
+COMPUTATIONAL SCIENCE:
+Matlab, graph partitioning & clustering, conjugate gradient, page rank,
+least squares, data fitting, Analysis
+optimization methods, numerical computing, statistics, 
+linear algebra, discrete maths, calculus
+
+FROTEND:
+UI/UX design in Figma, Software Engineering: fullstack web development.
+Balsamiq wireframes prototyping.
+
+DATABASES:
+MySQL, relational databases
+mongodb, document based
+
+EXTRA:
+Attended the ACM ICSA International Symposium on Computer Architecture 2022 
+workshops and office hours 
+Sea lifeguard. Casual guitarist. Actor.
+Vim and tiling window managers enthusiast.
+OpenBSD enjoyer, GNU \text{+} Linux as daily drive.
+CTFs cybersecurity participant.
+Suckless software connoisseur.
+Electives: Programming Challenges in Competitive Programming style @ USI
+
+EMBEDDED:
+
+
+SOFT SKILLS: 
+flexibility, public speaking, resilient,  pressure performer, attention to detail
+
+
+ALGORITHMS:
+algorithms & data structures, experimatation & evaluation, automata & formal languages regex
+
+LOW LEVEL GRAPHICS
+Computer Graphics, Systems Programming, Operating Systems, Computer Architecture
+raytracing, OpenGL, WebGL, gcc, gdb, C, C++, valgrind, makefile, x86 assembly, multithreading, vagrant, concurrency, BSD kernel
+
+NETWORKING:
+Networking, Information Retrieval, data management, web design
+wireshark, web crawling, Search engine, Terrier IR, Scrapy, python, subnetting, 
+
+SOFT SKILLS TAs:
+project management, Agile development, design patterns
+
+CLARANET KEYWORDS: lambda, API Gateway, S3, IAM, serverless, Cloud9, IaC, devops
+
+
+BITSERVICE DESCRIPTION: Improved websites with wordpress. Profiling GDPR compliance. Created 
+moodle e-learning content for it. EU regulations. Building, setup and maintenance 
+of computer hardware, OS and software
+KEYWORDS: Wordpress, EU GDPR, Moodle, computer building/assembling
+
+IDEA Projects: BOSET blood bag logger, DONET environmental sensors device 
+docking station RaspberryPI, porting company's SCADA to newer version of Ignition with Python3
+KEYWORDS: d3.js, aws iot, sqlite, linux, nfc, esp32
