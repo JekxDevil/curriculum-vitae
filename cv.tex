@@ -38,13 +38,7 @@
 \address{
     \includegraphics[width=\iconsize, trim={0.1cm 0.4cm 0.3cm 0cm}]{linkedin-icon.png}
     \href{https://www.linkedin.com/in/jefersonmm/}{linkedin.com/in/jefersonmm} 
-    \\ 
-    \includegraphics[width=\iconsize, trim={0cm 0.4cm 0cm 0cm}]{github-mark.png}
-    \href{https://github.com/JekxDevil}{github.com/JekxDevil} 
-    % \\
-    % \includegraphics[width=\iconsize, trim={0cm 0.5cm 0cm 0cm}]{gitlab-icon.png}
-    % \href{https://gitlab.com/JekxDevil}{gitlab.com/JekxDevil}
-    \\ 
+    \\
     \includegraphics[width=\iconsize, trim={0cm 3.5cm 0cm 0cm}]{email-icon.png}
     \href{mailto:jeferson.morales.mariciano@gmail.com}{jeferson.morales.mariciano@gmail.com} 
     % \\  \href{https://portfolio.com}{portfolio}
@@ -64,22 +58,22 @@
 % EXTRA CURRICULAR ACTIVITIES
 %----------------------------------------------------------------------------------------
 
-\begin{minipage}[l]{0.3\linewidth}
+\begin{minipage}[b]{0.3\linewidth}
 
 \begin{minipage}[c]{\linewidth}
     \centering
     \begin{tikzpicture}
+    % clip changes x,y position of image inside circle
     \clip (0,0) circle (2cm); 
     \node[anchor=center] at (0.2,0)   
-    {\includegraphics[width=\linewidth, trim={0cm 0cm 0cm 0cm}]{profile-picture.jpg}};
+    {\includegraphics[width=\linewidth, trim={1cm 0cm 1cm 0cm}, clip]{profile-picture.jpg}};
     \end{tikzpicture}
 \end{minipage}
 
 % --- BIO -------------------------------------------------------------------------------
 \begin{rSection}{BIOGRAPHY}
-    \item A software engineer studying AI,
-    dedicated to devops
-    still using Vim \& tiling window managers in Linux
+    \item A software engineer studying AI, dedicated to devops
+        still using Vim \& tiling window managers in Linux
 \end{rSection}
 
 % --- CERTIFICATIONS --------------------------------------------------------------------
@@ -91,20 +85,34 @@
 
 % --- LANGUAGES --------------------------------------------------------------
 \begin{rSection}{Languages}
+    \vspace{0.2cm}
     \item \begin{tabular}{ll}
         English & Fluent B2 Certificate     \\
         Italian & Native                    \\
         Spanish & Native                    \\
-        French  & A2 Certificate            \\
+        French  & A3 Certificate            \\
         German  & Beginner                  \\
     \end{tabular}
 \end{rSection}
+
+\begin{rSection}{Portfolio}
+    \item[]\includegraphics[width=\iconsize, trim={0cm 0.4cm 0cm 0cm}]{github-mark.png}
+        \href{https://github.com/JekxDevil}{github.com/JekxDevil} 
+    
+    \item[]\includegraphics[width=\iconsize, trim={0cm 0.5cm 0cm 0cm}]{gitlab-icon.png}
+        \href{https://gitlab.com/JekxDevil}{gitlab.com/JekxDevil}
+\end{rSection}
+
 \end{minipage}
 \begin{minipage}[l]{0.7\linewidth}
+
+    \headline
+
 \begin{rSection}{Education}
+    \vspace{0.2cm}
     % --- UNIVERSITY --------------------------------------------------------------------   
     \includegraphics[width=0.5cm, trim={0cm 5cm 0cm 0cm}]{usi-icon.png}
-    {\bf Bachelor in Computer Science},
+    {\bf Bachelor in Computer Science}
     \hfill \href{https://www.usi.ch/en}{USI}, Switzerland\\
     Scholarship. Degree in English. GPA 5.59/6. 
     \hfill {Sep 2021 - Jun 2024} 
@@ -113,7 +121,7 @@
 
     % --- School -------------------------------------------------------------------------
     \includegraphics[width=0.5cm, trim={0cm 1cm 0cm 0cm}]{iisve-icon.png}
-    {\bf High School Diploma in Computer Science},
+    {\bf High School Diploma in Computer Science}
     \hfill \href{https://www.istitutovolterraelia.it/}{IIS Volterra Elia}, Italy \\
     Graduated with Honors.
     \hfill {Sep 2016 - Jun 2021} 
@@ -128,12 +136,13 @@
     \hspace*{0.85cm}\href{https://www.usi.ch/}{USI} Università della Svizzera italiana
     \hfill \textit{Switzerland, Lugano}
     \begin{itemize}
-        \item \href{https://search.usi.ch/it/corsi/35268192/software-atelier-4-software-engineering-project}{Software Engineering}
-              course by Dr. A. Mocci: requirements engineering, software quality and devops.
+        \item \href{https://search.usi.ch/it/corsi/35268192/software-atelier-4-software-engineering-project}{Software Engineering}: 
+        requirements engineering, software quality and devops.
+        % course by Dr. A. Mocci
 
-        \item \href{https://search.usi.ch/it/corsi/35268184/data-management}{Data Management}
-              course by Prof. P. T. Eugster: database design, query execution, transaction processing.
-              Relational databases, MySQL, Spark.
+        \item \href{https://search.usi.ch/it/corsi/35268184/data-management}{Data Management}: 
+        relational databases, transaction query processing, Spark.
+        % course by Prof. P. T. Eugster
     \end{itemize}
     \vspace{\intraexpvspace}
     \vspace{\intraexpvspace}
