@@ -1,7 +1,7 @@
 \documentclass{cv} % Use the custom resume.cls style
 
 \usepackage{verbatim}
-\usepackage[left=0.1in, top=0.2in, right=0.1in, bottom=0.2in, showframe=false]{geometry} % Document margins
+\usepackage[left=0.2in, top=0.3in, right=0.2in, bottom=0.2in, showframe=false]{geometry} % Document margins
 \usepackage{amsmath}
 \usepackage{amsbsy}
 \usepackage[export]{adjustbox}
@@ -50,7 +50,7 @@
 % BLANK KEYWORDS
 % git, shell scripting, uml,  vagrant, solid, domain driven design, linux
 \begin{document}
-\begin{minipage}[b][0.9\paperheight][t]{0.3\linewidth}
+\begin{minipage}[b][0.9\paperheight][t]{0.29\linewidth}
 
 \begin{minipage}[c]{\linewidth}
     \centering
@@ -68,6 +68,12 @@
         still using Vim \& tiling window managers in Linux
 \end{rSection}
 
+\begin{rSection}{Strong Skills}
+    \item Python, Django, Flask, FastAPI,  
+    \item Java, Spring Boot, Javascript, Vue
+    \item Docker, Terraform, Networking
+\end{rSection}
+
 % --- CERTIFICATIONS --------------------------------------------------------------------
 \begin{rSection}{CERTIFICATIONS}
     \item \underline{CCNA} {CISCO, 2021}
@@ -78,11 +84,16 @@
 % --- LANGUAGES --------------------------------------------------------------
 \begin{rSection}{Languages}
     \vspace{0.2cm}
-    \item \begin{tabular}{ll}
-        English & Fluent B2 Certificate     \\
+    % \item English  Fluent B2 Certificate     
+    % \item Italian  Native                    
+    % \item Spanish  Native                    
+    % \item French   A3 Certificate            
+    % \item German   Beginner                  
+    \item \begin{tabular}{@{}ll@{}}
+        English & Fluent + Certificates     \\
         Italian & Native                    \\
         Spanish & Native                    \\
-        French  & A3 Certificate            \\
+        French  & A2 Certificate            \\
         German  & Beginner                  \\
     \end{tabular}
 \end{rSection}
@@ -96,9 +107,16 @@
 \end{rSection}
 
 \end{minipage}
+\hspace{0.1cm}
 \begin{minipage}[b][0.9\paperheight][t]{0.7\linewidth}
 
     \headline
+
+% --- OBJECTIVE -------------------------------------------------------------------------------
+\begin{rSection}{OBJECTIVE}
+    \item Software engineer with 4+ years of experience in fullstack development specialized in backend, 
+    seeking Cloud and Network internship roles.
+\end{rSection}
 
 \begin{rSection}{Education}
     \vspace{0.2cm}
@@ -177,7 +195,7 @@
     %--- IDEA -------------------------------------------------------------------------------
     \includegraphics[width=0.75cm, trim={0cm 1.5cm 0cm 0cm}]{idea-icon.png}
     \textbf{Software Developer} \hfill Feb, Jun - Aug 2020; Jul 2021\\
-    \hspace*{0.85cm}\href{https://idea-on-line.it/}{Idea Soc. Coop.} - Industrial Automation 
+    \hspace*{0.85cm}\href{https://idea-on-line.it/}{Idea Soc Coop} - Industrial Automation 
     \hfill \textit{Italy, Ancona}
     \begin{itemize}
         \item Blood bag logger: 
@@ -193,6 +211,9 @@
     \includegraphics[width=0.75cm, trim={0cm 1.5cm 0cm 0cm}]{bitservice-icon.png}
     \textbf{ICT technician} \hfill May 2019 \\
     \hspace*{0.85cm}BitService di Santoni Angelo - IT Consulting \hfill \textit{Italy, Ancona}
+    \begin{itemize}
+        \item Hardware and OS maintenance, GDPR compliance, Moodle e-learning.
+    \end{itemize}
 \end{rSection}
 
 %--- PROJECTS SECTION -------------------------------------------------------------------
@@ -205,25 +226,13 @@
     {Leader, 12 developers team.
         Built \textbf{social media} to share travel experiences,
         with friendship mechanisms and realtime notifications.
-        Responsive web application with OAuth2 and $\boldsymbol{> 99}$\textbf{\% test coverage}.
+        \textbf{Responsive} web application with \textbf{OAuth2} and $\boldsymbol{> 99\%}$ \textbf{test} coverage.
         \href{https://gitlab.com/usi-si-oss/teaching/projects-showcase/sa4/team-4-pufferfish}{GitLab.}
         % fun fact >99% test cov
         % Testing, containers, orchestration for deployment, Gitlab for Agile project management, 
         % CQI and CI/CD.
-    }\\[0.1cm]
-    \hspace*{0.5cm}\underline{Skills}:
-    \textbf{Docker},
-    \textbf{Java Spring Boot},
-    \textbf{Vue},
-    GitOps,
-    junit,
-    nginx,
-    SonarQube,
-    CI/CD,
-    fullstack
-    %Scrum,
-    %mongodb,
-    %SSE
+    }%\\[0.1cm]
+    % Skills: Docker, Java Spring Boot, Vue, GitOps, junit, nginx, SonarQube, CI/CD, fullstack, Scrum, mongodb, SSE
 
     \vspace{\intraexpvspace}
     \item \textbf{\href{https://handshakeapp.ch}{
@@ -232,47 +241,37 @@
         }}
     {Built an \textbf{instant messaging} web application with video calls, group chats and friends
         using MEVN stack deployed on AWS.
-        During \textbf{presentation $\boldsymbol{\approx1000}$ messages from $\boldsymbol{+80}$ users}.
+        During \textbf{presentation $\boldsymbol{\approx1000}$ messages from $\boldsymbol{+ 80}$ users}.
         Team of 5 developers.
         \href{https://github.com/ogs-at-usi/handshake}{GitHub}.
-    }\\[0.1cm]
-    \hspace*{0.5cm}\underline{Skills}:
-    \textbf{Vue},
-    vuetify,
-    node.js,
-    express.js,
-    mongodb,
-    \textbf{web sockets},
-    webRTC, %peer.js
-    material design,
-    mocha
+    }%\\[0.1cm]
+    % skills: Vue, vuetify, node.js, express.js, mongodb, web sockets, webRTC, peer.js, material design,
 \end{rSection}
-
 %--- LEADERSHIP -------------------------------------------------------------------------
 \begin{rSection}{Leadership \& Accomplishments}
     \vspace{0.2cm}
     \begin{itemize}
         \itemsep 0.2em
+    \item \textbf{Swiss Scholarship} awarded at USI from 
+        \href{https://www.olimpiadi-informatica.it/index.php/selezione-territoriale-20.html}{Italian Informatics Olympiad 2020}.
+        %FFL
+
     \item \href{https://swerc.eu/2022/teams/}{ICPC SWERC 2022}
         competed as USInchronous team representing USI. % Competitive Programming.
 
     \item \href{https://www.makerslab.it/olimpiadi-robotiche-ancona-2019/}{1st team}
         classified in \textbf{Robotics} Olympiad 2019 regional phase in Italy.
 
-    \item \textbf{Scholarship} awarded in \textbf{Switzerland} from 
-        \href{https://www.olimpiadi-informatica.it/index.php/selezione-territoriale-20.html}{Italian Informatics Olympiad 2020}.
-        %FFL
-
     \item \textbf{Representant} of the \textbf{Faculty} of Informatics in the student council at USI.
+
+    \item \href{https://cyberchallenge.it/}{CyberChallenge} 2019 \textbf{youngest} student
+        in \textit{Marche} region, organised in Italy. 
+        % Cybersecurity National Lab.
 
     \item \href{https://hackzurich.com/}{HackZurich}, 
         \href{https://www.junction2023.com/}{Junction} 
         hackathons participation in \textbf{Zurich} and \textbf{Helsinki}.
     % $2022$ \& $2023$; 2023 with leader role 
-
-    \item \href{https://cyberchallenge.it/}{CyberChallenge} 2019 \textbf{youngest} student
-        in \textit{Marche} region, organised in Italy. 
-        % Cybersecurity National Lab.
     \end{itemize}
 \end{rSection}
 
@@ -304,31 +303,20 @@
 %{Software Engineer with 2+ years of experience in XXX, seeking full-time XXX roles.}
 %\end{rSection}
 %----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-% Minor in Linguistics \smallskip \\
-% Member of Eta Kappa Nu \\
-% Member of Upsilon Pi Epsilon \\
-% Relevant Coursework: 
-%----------------------------------------------------------------------------------------
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
 %%Technical Skills & MongoDB, Vuejs, Express, Nodejs, Windows Forms, Visual Studio, 
 FastAPI, Java, Java Swing, Java Spring Boot, Docker D \\
 
-%\item \textbf{ICPC SWERC} 2022 participation. 
-%Participated in the International Collegiate Programming Contest, Southwestern Europe Regional.
-%Competed as USInchronous team representing USI.
+ICPC SWERC 2022 participation: Participated in the International Collegiate Programming Contest, 
+Southwestern Europe Regional. Competed as USInchronous team representing USI.
 
-%\begin{itemize}
-%\item Sea lifeguard license. Società Nazionale di Salvamento, Issued Jul 2019. Credential ID 631357.
-%\item Computer assembling, hardware and custom PC builds.
-%\item Participating in CyberSecurity CTFs competitions.
-%\item OpenBSD enjoyer, GNU/Linux as daily drive.
-%\item Vim and tiling window managers enthusiast (i3, dwm), suckless software connoisseur
-%\item Theater actor at Iride Theater Company.
-%\end{itemize}
-
-
+EXTRACURRICULAR:
+Sea lifeguard license. Società Nazionale di Salvamento, Issued Jul 2019. Credential ID 631357.
+Computer assembling, hardware and custom PC builds.
+Participating in CyberSecurity CTFs competitions.
+OpenBSD enjoyer, GNU/Linux as daily drive.
+Vim and tiling window managers enthusiast (i3, dwm), suckless software connoisseur
+Theater actor at Iride Theater Company.
 
 TODO: add to portfolio
 
@@ -421,7 +409,7 @@ flexibility, public speaking, resilient,  pressure performer, attention to detai
 
 
 ALGORITHMS:
-algorithms & data structures, experimatation & evaluation, automata & formal languages regex
+algorithms & data structures, experimetation & evaluation, automata & formal languages regex
 
 LOW LEVEL GRAPHICS
 Computer Graphics, Systems Programming, Operating Systems, Computer Architecture
