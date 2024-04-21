@@ -9,6 +9,7 @@
 \usepackage{enumitem}
 \usepackage{hyperref}
 \usepackage{tikz}
+\usepackage{transparent}
 
 \graphicspath{ {./images/} }
 
@@ -42,14 +43,8 @@
     \\
     \includegraphics[width=\iconsize, trim={0cm 3.5cm 0cm 0cm}]{email-icon.png}
     \href{mailto:jeferson.morales.mariciano@gmail.com}{jeferson.morales.mariciano@gmail.com} 
-    % \\  \href{https://portfolio.com}{portfolio}
 }
 
-% Strong skills: docker, java, python, flask, 
-% linux, fastAPI, poetry venv, terraform, networking
-
-% BLANK KEYWORDS
-% git, shell scripting, uml,  vagrant, solid, domain driven design, linux
 \begin{document}
 \begin{minipage}[b][0.9\paperheight][t]{0.29\linewidth}
 
@@ -93,11 +88,6 @@
 % --- LANGUAGES --------------------------------------------------------------
 \begin{rSection}{Languages}
     \vspace{0.2cm}
-    % \item English  Fluent B2 Certificate     
-    % \item Italian  Native                    
-    % \item Spanish  Native                    
-    % \item French   A3 Certificate            
-    % \item German   Beginner                  
     \item \begin{tabular}{@{}ll@{}}
         English & Fluent + Certificates     \\
         Italian & Native                    \\
@@ -118,6 +108,19 @@
 
     \item[]\includegraphics[width=\iconsize, trim={0cm 0.12cm 0.03cm 0cm}]{website.png}
         \href{http://jefersonmm.com}{jefersonmm.com} (maintenance)
+\end{rSection}
+
+% keyword injection for ATS
+\transparent{0}
+\begin{rSection}{Skills}
+    \item[] git, shell scripting, uml, vagrant, solid, domain driven design,
+    venv, poetry, pytest, gitflow, continuous integration, continuous deployment,
+    gitops, junit, nginx, sonarqube, scrum, agile project management, containerization,
+    orchestration, cqi
+    mongodb, sqlite, postgresql, mysql, % databases
+    Vuejs, Vue, vuetify, nodejs, node.js, expressjs, express.js, web sockets, webRTC, material design, % frontend
+    competitive programming, cybersecurity, i3, dwm, CTF, OOP, Java Swing TDD, test driven development,
+    functional programming, scheme, racket, lisp, d3js, s3, OpenGL, valgrind, makefile, gdb, gcc
 \end{rSection}
 
 \end{minipage}
@@ -203,7 +206,6 @@
               % for assessment of structure, typing, and evaluation of expressions.
               % with usage of design patterns 
               % for parsing and exploring source code graph structures.
-              % pytest, poetry, venv, design patterns, gitflow, Python3.10
     \end{itemize}
     \vspace{\intraexpvspace}
     \vspace{\intraexpvspace}
@@ -244,11 +246,7 @@
         with friendship mechanisms and realtime notifications.
         \textbf{Responsive} web application with \textbf{OAuth2} and $\boldsymbol{> 99\%}$ \textbf{test} coverage.
         \href{https://gitlab.com/usi-si-oss/teaching/projects-showcase/sa4/team-4-pufferfish}{GitLab.}
-        % fun fact >99% test cov
-        % Testing, containers, orchestration for deployment, Gitlab for Agile project management, 
-        % CQI and CI/CD.
-    }%\\[0.1cm]
-    % Skills: Docker, Java Spring Boot, Vue, GitOps, junit, nginx, SonarQube, CI/CD, fullstack, Scrum, mongodb, SSE
+    }
 
     \vspace{\intraexpvspace}
     \item \textbf{\href{https://handshakeapp.ch}{
@@ -260,8 +258,7 @@
         During \textbf{presentation $\boldsymbol{\approx1000}$ messages from $\boldsymbol{+ 80}$ users}.
         Team of 5 developers.
         \href{https://github.com/ogs-at-usi/handshake}{GitHub}.
-    }%\\[0.1cm]
-    % skills: Vue, vuetify, node.js, express.js, mongodb, web sockets, webRTC, peer.js, material design,
+    }
 \end{rSection}
 %--- LEADERSHIP -------------------------------------------------------------------------
 \begin{rSection}{Leadership \& Achievements}
@@ -270,31 +267,28 @@
         \itemsep 0.2em 
     \item \textbf{Swiss Scholarship} awarded at USI from 
         \href{https://www.olimpiadi-informatica.it/index.php/selezione-territoriale-20.html}{Italian Informatics Olympiad 2020}.
-        %FFL
+        %FFL, scoring a remarkable ranking.
 
     \item \href{https://icpc.global/ICPCID/ZOI3HF9XDUH8}{ICPC SWERC 2022}
-        competed as USInchronous team representing USI. % Competitive Programming.
+        competed as USInchronous team representing USI.
 
     \item Included in Italian \textbf{National \href{https://www.indire.it/eccellenze/}{Register of Excellence}} 2020/2021.
 
     \item \href{https://www.makerslab.it/olimpiadi-robotiche-ancona-2019/}{1st team}
-        classified in \textbf{Robotics} Olympiad 2019 regional phase in Italy.
+        classified in \textbf{Robotics} Olympiad 2019 regional phase in Italy. % Contest Marche region, Ancona.
 
     \item \href{https://cyberchallenge.it/}{CyberChallenge} 2019 \textbf{youngest} student
-        in \textit{Marche} region, organised in Italy. 
-        % Cybersecurity National Lab.
+        in \textit{Marche} region, organised in Italy. % Cybersecurity National Lab.
 
     \item \textbf{Representant} of the \textbf{Faculty} of Informatics in the student council at USI.
 
     \item \href{https://hackzurich.com/}{HackZurich}, 
         \href{https://www.junction2023.com/}{Junction} 
         hackathon participations in \textbf{Zurich} and \textbf{Helsinki}.
-    % $2022$ \& $2023$; 2023 with leader role 
+        % $2022$ \& $2023$; 2023 with leader role 
     \end{itemize}
 \end{rSection}
 
-% Contest for Marche region held in Ancona.
-% and scoring a remarkable ranking.
 \end{minipage}
 \end{document}
 
