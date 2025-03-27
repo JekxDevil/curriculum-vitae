@@ -1,3 +1,5 @@
+%!LW recipe=xelatexmk
+
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 % Awesome CV LaTeX Template for CV/Resume
@@ -29,7 +31,7 @@
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
-\colorlet{awesome}{awesome-red}
+\colorlet{awesome}{awesome-darknight}
 % Uncomment if you would like to specify your own color
 % \definecolor{awesome}{HTML}{CA63A8}
 
@@ -41,35 +43,46 @@
 % \definecolor{lighttext}{HTML}{999999}
 
 % Set false if you don't want to highlight section with awesome color
-\setbool{acvSectionColorHighlight}{true}
+\setbool{acvSectionColorHighlight}{false}
 
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
+\makeatletter
+\patchcmd{\@sectioncolor}{\color}{\mdseries\color}{}{}
+\makeatother
 
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
-% \photo{profile.png}
-\name{Claud D.}{Park}
-\position{Software Engineer{\enskip\cdotp\enskip}Security Expert}
-\address{246-1002, Gwangmyeongmayrouge Apt. 86, Cheongna lime-ro, Seo-gu, Incheon-si, 404-180, Rep. of KOREA}
+% \photo[rectangle,edge,right]{profile}
+\name{Jeferson}{Morales Mariciano}
+\position{%
+    MSc student in Computer Science
+    {\enskip\cdotp\enskip}
+    ETH Zurich
+    {\enskip\cdotp\enskip}
+    Machine Intelligence
+    {\enskip\cdotp\enskip}
+    Software Engineer}
+% \address{246-1002, Gwangmyeongmayrouge Apt. 86, Cheongna lime-ro, Seo-gu, Incheon-si, 404-180, Rep. of KOREA}
+% \address{Zurich, Switzerland}
 
-\mobile{(+82) 10-9030-1843}
-\email{posquit0.bj@gmail.com}
-\homepage{www.posquit0.com}
-\github{posquit0}
-\linkedin{posquit0}
+\mobile{(+39) 3278-5578-18}
+\email{jeferson.morales.mariciano@gmail.com}
+\homepage{jefersonmm.com}
+\github{jekxdevil}
+\linkedin{jefersonmm}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
-% \twitter{@twit}
+% \twitter{@MPollind}
 % \skype{skype-id}
 % \reddit{reddit-id}
-% \extrainfo{extra informations}
+\extrainfo{EU, Permit B, Driving License}
 
-\quote{``Be the change that you want to see in the world."}
+% \quote{``Be the change that you want to see in the world."}
 
 
 %-------------------------------------------------------------------------------
@@ -77,29 +90,39 @@
 
 % Print the header with above personal informations
 % Give optional argument to change alignment(C: center, L: left, R: right)
-\makecvheader
+\makecvheader[C]
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {Claud D. Park~~~·~~~Curriculum Vitae}
-  {\thepage}
+  % {Jeferson J. Morales Mariciano~~~·~~~Résumé}
+  {}
+  {in compliance with the European Regulation 679/2016, 
+  I hereby authorize you to use and process my personal data.}
+  % {\thepage}
 
 
 %-------------------------------------------------------------------------------
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-\input{cv/education.tex}
-\input{cv/skills.tex}
-\input{cv/experience.tex}
-\input{cv/extracurricular.tex}
-\input{cv/honors.tex}
-\input{cv/presentation.tex}
-\input{cv/writing.tex}
-\input{cv/committees.tex}
-
-
+\vspace{-0.4cm}
+\input{resume/summary.tex}
+\vspace{-0.45cm}
+\input{resume/education.tex}
+\vspace{-0.4cm}
+\input{resume/experience.tex}
+\vspace{-0.4cm}
+\input{resume/honors.tex}
+\vspace{-0.4cm}
+% \input{resume/presentation.tex}
+% \input{resume/writing.tex}
+% \input{resume/committees.tex}
+\input{resume/projects.tex}
+\vspace{-0.4cm}
+% \input{resume/organizations.tex} usi repr in honors
+% \input{resume/extracurricular.tex}
+\input{resume/language_frameworks.tex}
 %-------------------------------------------------------------------------------
 \end{document}
