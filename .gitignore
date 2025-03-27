@@ -1,5 +1,7 @@
 # don't upload pdf files
 *.pdf
+# discard windows files when developing from wsl
+*Zone.Identifier
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
